@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class LoadingManager : MonoBehaviour
 {
+    public AudioSource menuEntrance;
+    public AudioSource menuExit;
+
     public static LoadingManager Instance;
 
     public GameObject LoadingPanel;
@@ -29,10 +32,24 @@ public class LoadingManager : MonoBehaviour
         FadeImage.gameObject.SetActive(false);
     }
 
-    public void LoadScene(string sceneName)
+    public void LoadScene(string sceneName, bool isEntrance)
     {
         targetScene = sceneName;
+        if (isEntrance)
+        {
+            StartCoroutine(playSound(menuEntrance));
+        }
+        else
+        {
+            StartCoroutine(playSound(menuExit));
+        }
         StartCoroutine(LoadSceneRoutine());
+    }
+
+    IEnumerator playSound(AudioSource audioSource)
+    {
+        audioSource.Play();
+        yield return new WaitWhile(() => audioSource.isPlaying);
     }
 
     private IEnumerator LoadSceneRoutine()
