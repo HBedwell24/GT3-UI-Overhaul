@@ -20,9 +20,11 @@ public class LoadingManager : MonoBehaviour
 
     private string targetScene;
     private bool isLoading;
+    private bool isEntrance;
 
     private void Awake()
     {
+
         if (Instance == null)
         {
             Instance = this;
@@ -32,28 +34,39 @@ public class LoadingManager : MonoBehaviour
         FadeImage.gameObject.SetActive(false);
     }
 
-    public void LoadScene(string sceneName, bool isEntrance)
+    public void LoadScene(string parameter)
     {
-        targetScene = sceneName;
-        if (isEntrance)
-        {
-            StartCoroutine(playSound(menuEntrance));
-        }
-        else
-        {
-            StartCoroutine(playSound(menuExit));
-        }
+        targetScene = parameter;
+        StartCoroutine(LoadSceneRoutine());
+    }
+
+    public void LoadSceneWithTransition(string parameters)
+    {
+        var parameterArray = parameters.Split(',');
+
+        targetScene = parameterArray[0];
+        isEntrance = bool.Parse(parameterArray[1]);
+
         StartCoroutine(LoadSceneRoutine());
     }
 
     IEnumerator playSound(AudioSource audioSource)
     {
         audioSource.Play();
-        yield return new WaitWhile(() => audioSource.isPlaying);
+        yield return null;
     }
 
     private IEnumerator LoadSceneRoutine()
     {
+        if (isEntrance)
+        {
+            yield return StartCoroutine(playSound(menuEntrance));
+        }
+        else
+        {
+            yield return StartCoroutine(playSound(menuExit));
+        }
+
         isLoading = true;
 
         FadeImage.gameObject.SetActive(true);
@@ -92,6 +105,7 @@ public class LoadingManager : MonoBehaviour
             yield return null;
 
         isLoading = false;
+        Destroy(gameObject);
     }
 
     private bool Fade(float target)
