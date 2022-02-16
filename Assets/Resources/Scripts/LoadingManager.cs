@@ -34,10 +34,14 @@ public class LoadingManager : MonoBehaviour
         FadeImage.gameObject.SetActive(false);
     }
 
-    public void LoadScene(string parameter)
+    public void LoadScene(string parameters)
     {
-        targetScene = parameter;
-        StartCoroutine(LoadSceneRoutine());
+        var parameterArray = parameters.Split(',');
+
+        targetScene = parameterArray[0];
+        isEntrance = bool.Parse(parameterArray[1]);
+
+        StartCoroutine(LoadBasicFadeRoutine());
     }
 
     public void LoadSceneWithTransition(string parameters)
@@ -47,7 +51,7 @@ public class LoadingManager : MonoBehaviour
         targetScene = parameterArray[0];
         isEntrance = bool.Parse(parameterArray[1]);
 
-        StartCoroutine(LoadSceneRoutine());
+        StartCoroutine(LoadAdvancedFadeRoutine());
     }
 
     IEnumerator playSound(AudioSource audioSource)
@@ -56,7 +60,45 @@ public class LoadingManager : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator LoadSceneRoutine()
+    private IEnumerator LoadBasicFadeRoutine()
+    {
+        if (isEntrance)
+        {
+            yield return StartCoroutine(playSound(menuEntrance));
+        }
+        else
+        {
+            yield return StartCoroutine(playSound(menuExit));
+        }
+
+        isLoading = true;
+
+        FadeImage.gameObject.SetActive(true);
+        FadeImage.canvasRenderer.SetAlpha(0);
+
+        while (!Fade(1))
+            yield return null;
+
+        LoadingPanel.SetActive(true);
+
+        while (!Fade(0))
+            yield return null;
+
+        SceneManager.LoadSceneAsync(targetScene);
+        
+        while (!Fade(1))
+            yield return null;
+
+        LoadingPanel.SetActive(false);
+
+        while (!Fade(0))
+            yield return null;
+
+        isLoading = false;
+        Destroy(gameObject);
+    }
+
+    private IEnumerator LoadAdvancedFadeRoutine()
     {
         if (isEntrance)
         {
