@@ -9,51 +9,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Simulation Mode.unity
     guid: 400e5aec2406a5d4dbd77b41bb26d202
   - enabled: 1
-    path: Assets/Scenes/Single Player.unity
+    path: Assets/Scenes/Arcade Mode/Single Player.unity
     guid: b3149ba3223bd8e46a8b4431a1539d22
   - enabled: 1
-    path: Assets/Scenes/Track Selection.unity
+    path: Assets/Scenes/Arcade Mode/Track Selection.unity
     guid: 940166b330b61cd40bd49f7db963dc8a
   - enabled: 1
-    path: Assets/Scenes/Car Selection.unity
+    path: Assets/Scenes/Arcade Mode/Car Selection.unity
     guid: c59b89d528a95e34f8c809a351dc5c91
   - enabled: 1
-    path: Assets/Scenes/Car Configuration.unity
+    path: Assets/Scenes/Arcade Mode/Car Configuration.unity
     guid: 52b5c9c25d14e17408fd41cdbb7c4ff4
   - enabled: 1
-    path: Assets/Scenes/Go Race.unity
+    path: Assets/Scenes/Go Race/Go Race.unity
     guid: d94c902e22726024187dbd417927ec07
   - enabled: 1
-    path: Assets/Scenes/Race Confirmation Screen.unity
+    path: Assets/Scenes/Go Race/Race Confirmation Screen.unity
     guid: 23b4be57fdada4c43aebd971ad53ee10
   - enabled: 1
-    path: Assets/Scenes/Options.unity
+    path: Assets/Scenes/START/Options.unity
     guid: ebc5602a0d02d8e48aec0497d6e9f8ab
   - enabled: 1
-    path: Assets/Scenes/Car Detail Screen.unity
+    path: Assets/Scenes/Car Dealer/Car Detail Screen.unity
     guid: 5e1a5c11a66919a48a08b74c06877385
   - enabled: 1
-    path: Assets/Scenes/Car List Screen.unity
+    path: Assets/Scenes/My Home/Car List Screen.unity
     guid: 23a95aa05373fc24d93a3be235d3eec9
   - enabled: 1
-    path: Assets/Scenes/Car Wash.unity
+    path: Assets/Scenes/GT Auto/Car Wash.unity
     guid: adbd5fb935c66134cba3bfd48364c667
   - enabled: 1
-    path: Assets/Scenes/GT Auto.unity
+    path: Assets/Scenes/Tune Shop/GT Auto.unity
     guid: a8c342b595d11214480a13427737b2cb
   - enabled: 1
-    path: Assets/Scenes/Load Screen.unity
+    path: Assets/Scenes/START/Load Screen.unity
     guid: 5cf416f97a444ea48ab4fa2f64a45881
   - enabled: 1
-    path: Assets/Scenes/My Home.unity
+    path: Assets/Scenes/My Home/My Home.unity
     guid: f6ff7b4d0a7a3fc4493bfdaf38cb8bab
   - enabled: 1
-    path: Assets/Scenes/Overwrite Screen.unity
+    path: Assets/Scenes/START/Overwrite Screen.unity
     guid: 4f7b607e9d03b114a8fede9670f66d76
   - enabled: 1
-    path: Assets/Scenes/Save Screen.unity
+    path: Assets/Scenes/START/Save Screen.unity
     guid: 92a644cd2f12dd44cb8b7fab12d18f92
   - enabled: 1
-    path: Assets/Scenes/Tuning Shop.unity
+    path: Assets/Scenes/Tune Shop/Tuning Shop.unity
     guid: 6da11246ed7c69641abb6d8390f6507e
   m_configObjects: {}

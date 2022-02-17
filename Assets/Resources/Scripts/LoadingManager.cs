@@ -24,12 +24,6 @@ public class LoadingManager : MonoBehaviour
 
     private void Awake()
     {
-
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
         LoadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
     }
@@ -95,7 +89,6 @@ public class LoadingManager : MonoBehaviour
             yield return null;
 
         isLoading = false;
-        Destroy(gameObject);
     }
 
     private IEnumerator LoadAdvancedFadeRoutine()
