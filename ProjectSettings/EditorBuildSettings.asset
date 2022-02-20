@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Arcade Mode/Car Configuration.unity
     guid: 52b5c9c25d14e17408fd41cdbb7c4ff4
   - enabled: 1
+    path: Assets/Scenes/Car Dealer/Car Dealer.unity
+    guid: 07867f81c578f5a499acf0251d28e4ed
+  - enabled: 1
+    path: Assets/Scenes/Car Dealer/Car Dealer Manufacturer.unity
+    guid: 17427e40730d44d45966160570badd03
+  - enabled: 1
     path: Assets/Scenes/Car Dealer/Car Detail Screen.unity
     guid: 5e1a5c11a66919a48a08b74c06877385
   - enabled: 1
@@ -36,19 +42,19 @@ EditorBuildSettings:
     path: Assets/Scenes/My Home/My Home.unity
     guid: f6ff7b4d0a7a3fc4493bfdaf38cb8bab
   - enabled: 1
-    path: Assets/Scenes/START/Save Screen.unity
+    path: Assets/Scenes/Options/Save Screen.unity
     guid: 92a644cd2f12dd44cb8b7fab12d18f92
   - enabled: 1
-    path: Assets/Scenes/START/Overwrite Screen.unity
+    path: Assets/Scenes/Options/Overwrite Screen.unity
     guid: 4f7b607e9d03b114a8fede9670f66d76
   - enabled: 1
-    path: Assets/Scenes/START/Load Screen.unity
+    path: Assets/Scenes/Options/Load Screen.unity
     guid: 5cf416f97a444ea48ab4fa2f64a45881
   - enabled: 1
-    path: Assets/Scenes/START/Options.unity
+    path: Assets/Scenes/Options/Options.unity
     guid: ebc5602a0d02d8e48aec0497d6e9f8ab
   - enabled: 1
-    path: Assets/Scenes/START/Audio.unity
+    path: Assets/Scenes/Options/Audio.unity
     guid: caa0261fcc260e645a76fe6bde1687a1
   - enabled: 1
     path: Assets/Scenes/Tune Shop/GT Auto.unity
@@ -68,4 +74,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Go Race/Race Confirmation Screen.unity
     guid: 23b4be57fdada4c43aebd971ad53ee10
+  - enabled: 1
+    path: Assets/Scenes/Gallery/Library.unity
+    guid: 5ac2692efd50b6b44bdeb12883fabce9
+  - enabled: 1
+    path: Assets/Scenes/Gallery/Replay.unity
+    guid: 9d5ba473b5247654b9dc6773b9d78298
   m_configObjects: {}
