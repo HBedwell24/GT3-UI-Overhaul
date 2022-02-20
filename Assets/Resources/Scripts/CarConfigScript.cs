@@ -6,47 +6,56 @@ public class CarConfigScript : MonoBehaviour
     public AudioSource promptConfirm;
     public AudioSource goBack;
 
-    [SerializeField]
-    private CanvasGroup colorSelectionPrompt;
+    public GameObject loadingManager;
 
     [SerializeField]
-    private CanvasGroup transmissionPrompt;
+    public CanvasGroup colorSelectionPrompt;
 
     [SerializeField]
-    private CanvasGroup raceDifficultySelection;
+    public CanvasGroup transmissionPrompt;
 
     [SerializeField]
-    private CanvasGroup panel;
+    public CanvasGroup raceDifficultySelection;
 
     [SerializeField]
-    private CanvasGroup racePrompt;
+    public CanvasGroup panel;
 
     [SerializeField]
-    private CanvasGroup carInformation;
+    public CanvasGroup racePrompt;
 
     [SerializeField]
-    private CanvasGroup controls;
+    public CanvasGroup carInformation;
 
-    public void Awake()
+    [SerializeField]
+    public CanvasGroup controls;
+
+    private int counter = 1;
+
+    public void Start()
     {
         colorSelectionPrompt.alpha = 1;
+        colorSelectionPrompt.interactable = true;
+        colorSelectionPrompt.blocksRaycasts = true;
 
         carInformation.alpha = 1;
 
         controls.alpha = 1;
         controls.interactable = true;
+        controls.blocksRaycasts = true;
 
         transmissionPrompt.alpha = 0;
         transmissionPrompt.interactable = false;
+        transmissionPrompt.blocksRaycasts = false;
 
         raceDifficultySelection.alpha = 0;
         raceDifficultySelection.interactable = false;
+        raceDifficultySelection.blocksRaycasts = false;
 
         panel.alpha = 0;
-        panel.interactable = false;
 
         racePrompt.alpha = 0;
         racePrompt.interactable = false;
+        racePrompt.blocksRaycasts = false;
     }
 
     IEnumerator PlaySound(AudioSource audioSource)
@@ -57,36 +66,113 @@ public class CarConfigScript : MonoBehaviour
 
     public void SelectColor()
     {
+        // increment to 2
+        counter++;
         StartCoroutine(PlaySound(promptConfirm));
 
         colorSelectionPrompt.alpha = 0;
         colorSelectionPrompt.interactable = false;
+        colorSelectionPrompt.blocksRaycasts = false;
 
         transmissionPrompt.alpha = 1;
         transmissionPrompt.interactable = true;
+        transmissionPrompt.blocksRaycasts = true;
     }
 
     public void SelectTransmissionType()
     {
+        // increment to 3
+        counter++;
         StartCoroutine(PlaySound(promptConfirm));
 
         transmissionPrompt.alpha = 0;
         transmissionPrompt.interactable = false;
+        transmissionPrompt.blocksRaycasts = false;
 
         raceDifficultySelection.alpha = 1;
         raceDifficultySelection.interactable = true;
+        raceDifficultySelection.blocksRaycasts = true;
     }
 
     public void SelectRaceDifficulty()
     {
+        // increment to 4
+        counter++;
         StartCoroutine(PlaySound(promptConfirm));
 
         raceDifficultySelection.alpha = 0;
         raceDifficultySelection.interactable = false;
+        raceDifficultySelection.blocksRaycasts = false;
+
+        controls.alpha = 0;
+        controls.interactable = false;
+        controls.blocksRaycasts = false;
+
+        carInformation.alpha = 0;
 
         panel.alpha = 1;
 
         racePrompt.alpha = 1;
         racePrompt.interactable = true;
+        racePrompt.blocksRaycasts = true;
+    }
+
+    public void PromptExit()
+    {
+        switch (counter)
+        {
+            case 2:
+                counter--;
+                StartCoroutine(PlaySound(goBack));
+                
+                transmissionPrompt.alpha = 0;
+                transmissionPrompt.interactable = false;
+                transmissionPrompt.blocksRaycasts = false;
+
+                colorSelectionPrompt.alpha = 1;
+                colorSelectionPrompt.interactable = true;
+                colorSelectionPrompt.blocksRaycasts = true;
+                break;
+
+            case 3:
+                counter--;
+                StartCoroutine(PlaySound(goBack));
+
+                raceDifficultySelection.alpha = 0;
+                raceDifficultySelection.interactable = false;
+                raceDifficultySelection.blocksRaycasts = false;
+
+                transmissionPrompt.alpha = 1;
+                transmissionPrompt.interactable = true;
+                transmissionPrompt.blocksRaycasts = true;
+                
+                break;
+
+            case 4:
+                counter--;
+                StartCoroutine(PlaySound(goBack));
+
+                racePrompt.alpha = 0;
+                racePrompt.interactable = false;
+                racePrompt.blocksRaycasts = false;
+
+                panel.alpha = 0;
+
+                controls.alpha = 1;
+                controls.interactable = true;
+                controls.blocksRaycasts = true;
+
+                carInformation.alpha = 1;
+
+                raceDifficultySelection.alpha = 1;
+                raceDifficultySelection.interactable = true;
+                raceDifficultySelection.blocksRaycasts = true;
+                
+                break;
+
+            default:
+                loadingManager.GetComponent<LoadingManager>().LoadScene("Courtesy Cars,false");
+                break;
+        }
     }
 }
