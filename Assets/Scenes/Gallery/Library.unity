@@ -236,8 +236,9 @@ GameObject:
   - component: {fileID: 67230818}
   - component: {fileID: 67230817}
   - component: {fileID: 67230816}
+  - component: {fileID: 67230819}
   m_Layer: 5
-  m_Name: Display (1)
+  m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,6 +357,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67230814}
   m_CullTransparentMesh: 1
+--- !u!114 &67230819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67230814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &165848153
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +427,36 @@ Transform:
   - {fileID: 42251396}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &237155541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237155542}
+  m_Layer: 0
+  m_Name: CursorSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &237155542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237155541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 993.7334, y: 561.41614, z: -8246.899}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272134331
 GameObject:
@@ -673,8 +724,9 @@ GameObject:
   - component: {fileID: 285521382}
   - component: {fileID: 285521381}
   - component: {fileID: 285521380}
+  - component: {fileID: 285521383}
   m_Layer: 5
-  m_Name: Audio
+  m_Name: Favorites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,6 +833,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285521378}
   m_CullTransparentMesh: 1
+--- !u!114 &285521383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285521378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &392457917
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,12 +986,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &431497511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1301,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1285969830}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1284,8 +1358,9 @@ GameObject:
   - component: {fileID: 552164091}
   - component: {fileID: 552164090}
   - component: {fileID: 552164089}
+  - component: {fileID: 552164092}
   m_Layer: 5
-  m_Name: Display (2)
+  m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1404,6 +1479,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552164087}
   m_CullTransparentMesh: 1
+--- !u!114 &552164092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552164087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &567700229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,12 +1632,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &620060812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,12 +1975,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &968178884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +2017,7 @@ Transform:
   - {fileID: 1229211341}
   - {fileID: 1191749242}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018541193
 GameObject:
@@ -2589,12 +2688,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1221143940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,8 +2996,8 @@ RectTransform:
   - {fileID: 1784159825}
   - {fileID: 1221143941}
   - {fileID: 1689534974}
-  - {fileID: 492611053}
   - {fileID: 1336504131}
+  - {fileID: 492611053}
   - {fileID: 768503138}
   - {fileID: 1188071811}
   m_Father: {fileID: 0}
@@ -2940,7 +3041,7 @@ RectTransform:
   m_Children:
   - {fileID: 1553601293}
   m_Father: {fileID: 1285969830}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3288,12 +3389,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1487976707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,8 +3409,9 @@ GameObject:
   - component: {fileID: 1487976711}
   - component: {fileID: 1487976710}
   - component: {fileID: 1487976709}
+  - component: {fileID: 1487976712}
   m_Layer: 5
-  m_Name: Display
+  m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3426,6 +3530,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487976707}
   m_CullTransparentMesh: 1
+--- !u!114 &1487976712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487976707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1524461622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,8 +3562,9 @@ GameObject:
   - component: {fileID: 1524461626}
   - component: {fileID: 1524461625}
   - component: {fileID: 1524461624}
+  - component: {fileID: 1524461627}
   m_Layer: 5
-  m_Name: Audio (1)
+  m_Name: Favorites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3546,6 +3671,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524461622}
   m_CullTransparentMesh: 1
+--- !u!114 &1524461627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524461622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1553601292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,6 +3928,133 @@ Transform:
   m_Father: {fileID: 968178885}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591835458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591835460}
+  - component: {fileID: 1591835459}
+  m_Layer: 0
+  m_Name: PlaySoundtrack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1591835459
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591835458}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1591835460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591835458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 993.7334, y: 561.41614, z: -8246.899}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609518503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,8 +4150,9 @@ GameObject:
   - component: {fileID: 1631311123}
   - component: {fileID: 1631311122}
   - component: {fileID: 1631311121}
+  - component: {fileID: 1631311124}
   m_Layer: 5
-  m_Name: Audio (2)
+  m_Name: Playlist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3986,6 +4259,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631311119}
   m_CullTransparentMesh: 1
+--- !u!114 &1631311124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631311119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1665185535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,7 +4387,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 21300000, guid: 667e737eabfeef84e863982be463699a, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 869c4f4448790594e8d2cd28f9307826, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -4119,12 +4412,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1666198427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,12 +4680,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1689534973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,12 +4898,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8b959744b7f4e43a765830057e5390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areYouGonna: {fileID: 1389300454}
-  satisfied: {fileID: 436479827}
-  stopTheRock: {fileID: 1191749243}
-  madSkillz: {fileID: 283790229}
-  breakIn: {fileID: 1582414672}
-  glowl: {fileID: 1229211342}
+  areYouGonna: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+  satisfied: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+  stopTheRock: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+  madSkillz: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+  breakIn: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+  glowl: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+  cursorSound: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
+  audioSource: {fileID: 1591835459}
 --- !u!1 &1784159824
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,7 +5261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1665185535}
+  m_FirstSelected: {fileID: 552164087}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &2013536308
