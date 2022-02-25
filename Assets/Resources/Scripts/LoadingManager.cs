@@ -45,12 +45,6 @@ public class LoadingManager : MonoBehaviour
         StartCoroutine(LoadAdvancedFadeRoutine());
     }
 
-    IEnumerator playSound(AudioSource audioSource)
-    {
-        audioSource.Play();
-        yield return null;
-    }
-
     private IEnumerator LoadBasicFadeRoutine()
     {
         if (isEntrance)

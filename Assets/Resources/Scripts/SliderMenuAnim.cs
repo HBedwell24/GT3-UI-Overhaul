@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class SliderMenuAnim : MonoBehaviour
 {
-    public AudioSource subMenuEnter;
-    public AudioSource subMenuExit;
-
     public GameObject PanelMenu;
 
     [SerializeField]
@@ -32,26 +29,18 @@ public class SliderMenuAnim : MonoBehaviour
                 bool isOpen = animator.GetBool("show");
                 animator.SetBool("show", !isOpen);
 
-                StartCoroutine(PlaySound(isOpen));
+                // fade from opaque to transparent
+                if (isOpen)
+                {
+                    FindObjectOfType<AudioManager>().Play("Submenu Enter");
+                }
+                // fade from transparent to opaque
+                else
+                {
+                    FindObjectOfType<AudioManager>().Play("Submenu Exit");
+                }
                 StartCoroutine(FadeImage(isOpen));
             }
-        }
-    }
-
-    IEnumerator PlaySound(bool isOpen)
-    {
-
-        // fade from opaque to transparent
-        if (isOpen)
-        {
-            subMenuEnter.Play();
-            yield return new WaitWhile(() => subMenuExit.isPlaying);
-        }
-        // fade from transparent to opaque
-        else
-        {
-            subMenuExit.Play();
-            yield return new WaitWhile(() => subMenuEnter.isPlaying);
         }
     }
 

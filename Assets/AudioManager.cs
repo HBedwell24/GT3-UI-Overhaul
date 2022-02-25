@@ -1,14 +1,18 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
+    private string lastScene;
 
     public static AudioManager instance;
     void Awake()
     {
+        lastScene = SceneManager.GetActiveScene().name;
+
         if (instance == null)
         {
             instance = this;
@@ -32,7 +36,29 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("Simulation Mode");
+        playBackgroundMusic();
+    }
+
+    private void playBackgroundMusic()
+    {
+        if (lastScene.Equals("Simulation Mode"))
+        {
+            Play("Simulation Mode");
+        }
+        else if (lastScene.Equals("Go Race"))
+        {
+            Play("Go Race");
+        }
+    }
+
+    void Update()
+    {
+        var currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene != lastScene)
+        {
+            lastScene = currentScene;
+            playBackgroundMusic();
+        }
     }
 
     // Update is called once per frame
@@ -44,6 +70,9 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
-        s.source.Play();
+        if (!s.source.isPlaying)
+        {
+            s.source.Play();
+        }
     }
 }
