@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class LoadingManager : MonoBehaviour
 {
-    public AudioSource menuEntrance;
-    public AudioSource menuExit;
-
     public static LoadingManager Instance;
 
     public GameObject LoadingPanel;
@@ -58,11 +55,11 @@ public class LoadingManager : MonoBehaviour
     {
         if (isEntrance)
         {
-            yield return StartCoroutine(playSound(menuEntrance));
+            FindObjectOfType<AudioManager>().Play("Menu Selection");
         }
         else
         {
-            yield return StartCoroutine(playSound(menuExit));
+            FindObjectOfType<AudioManager>().Play("Menu Exit");
         }
 
         isLoading = true;
@@ -95,11 +92,11 @@ public class LoadingManager : MonoBehaviour
     {
         if (isEntrance)
         {
-            yield return StartCoroutine(playSound(menuEntrance));
+            FindObjectOfType<AudioManager>().Play("Menu Selection");
         }
         else
         {
-            yield return StartCoroutine(playSound(menuExit));
+            FindObjectOfType<AudioManager>().Play("Menu Exit");
         }
 
         isLoading = true;
