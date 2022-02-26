@@ -19,10 +19,50 @@ public class LoadingManager : MonoBehaviour
     private bool isLoading;
     private bool isEntrance;
 
+    private string lastScene;
+
     private void Awake()
     {
+        lastScene = SceneManager.GetActiveScene().name;
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         LoadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        playBackgroundMusic();
+    }
+
+    private void playBackgroundMusic()
+    {
+        if (lastScene.Equals("Simulation Mode"))
+        {
+            FindObjectOfType<AudioManager>().PlayMusic("Simulation Mode");
+        }
+        else if (lastScene.Equals("Go Race") || lastScene.Equals("Single Player"))
+        {
+            FindObjectOfType<AudioManager>().PlayMusic("Go Race");
+        }
+    }
+
+    void onSceneLoaded()
+    {
+        var currentScene = SceneManager.GetActiveScene().name;
+
+        Debug.Log(lastScene);
+        Debug.Log(currentScene);
+
+        if (currentScene != lastScene)
+        {
+            lastScene = currentScene;
+            playBackgroundMusic();
+        }
     }
 
     public void LoadScene(string parameters)
@@ -49,11 +89,11 @@ public class LoadingManager : MonoBehaviour
     {
         if (isEntrance)
         {
-            FindObjectOfType<AudioManager>().Play("Menu Selection");
+            FindObjectOfType<AudioManager>().PlayMusic("Menu Selection");
         }
         else
         {
-            FindObjectOfType<AudioManager>().Play("Menu Exit");
+            FindObjectOfType<AudioManager>().PlayMusic("Menu Exit");
         }
 
         isLoading = true;
@@ -80,17 +120,18 @@ public class LoadingManager : MonoBehaviour
             yield return null;
 
         isLoading = false;
+        Destroy(gameObject);
     }
 
     private IEnumerator LoadAdvancedFadeRoutine()
     {
         if (isEntrance)
         {
-            FindObjectOfType<AudioManager>().Play("Menu Selection");
+            FindObjectOfType<AudioManager>().PlayMusic("Menu Selection");
         }
         else
         {
-            FindObjectOfType<AudioManager>().Play("Menu Exit");
+            FindObjectOfType<AudioManager>().PlayMusic("Menu Exit");
         }
 
         isLoading = true;

@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class CarConfigScript : MonoBehaviour
 {
-    public AudioSource promptConfirm;
-    public AudioSource goBack;
-
     public GameObject loadingManager;
 
     [SerializeField]
@@ -58,17 +55,11 @@ public class CarConfigScript : MonoBehaviour
         racePrompt.blocksRaycasts = false;
     }
 
-    IEnumerator PlaySound(AudioSource audioSource)
-    {
-        audioSource.Play();
-        yield return null;       
-    }
-
     public void SelectColor()
     {
         // increment to 2
         counter++;
-        StartCoroutine(PlaySound(promptConfirm));
+        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
 
         colorSelectionPrompt.alpha = 0;
         colorSelectionPrompt.interactable = false;
@@ -83,7 +74,7 @@ public class CarConfigScript : MonoBehaviour
     {
         // increment to 3
         counter++;
-        StartCoroutine(PlaySound(promptConfirm));
+        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
 
         transmissionPrompt.alpha = 0;
         transmissionPrompt.interactable = false;
@@ -98,7 +89,7 @@ public class CarConfigScript : MonoBehaviour
     {
         // increment to 4
         counter++;
-        StartCoroutine(PlaySound(promptConfirm));
+        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
 
         raceDifficultySelection.alpha = 0;
         raceDifficultySelection.interactable = false;
@@ -123,8 +114,8 @@ public class CarConfigScript : MonoBehaviour
         {
             case 2:
                 counter--;
-                StartCoroutine(PlaySound(goBack));
-                
+                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
+
                 transmissionPrompt.alpha = 0;
                 transmissionPrompt.interactable = false;
                 transmissionPrompt.blocksRaycasts = false;
@@ -136,7 +127,7 @@ public class CarConfigScript : MonoBehaviour
 
             case 3:
                 counter--;
-                StartCoroutine(PlaySound(goBack));
+                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
 
                 raceDifficultySelection.alpha = 0;
                 raceDifficultySelection.interactable = false;
@@ -150,7 +141,7 @@ public class CarConfigScript : MonoBehaviour
 
             case 4:
                 counter--;
-                StartCoroutine(PlaySound(goBack));
+                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
 
                 racePrompt.alpha = 0;
                 racePrompt.interactable = false;

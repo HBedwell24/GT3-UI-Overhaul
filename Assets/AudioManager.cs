@@ -1,18 +1,13 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-
     public Sound[] sounds;
-    private string lastScene;
 
     public static AudioManager instance;
     void Awake()
     {
-        lastScene = SceneManager.GetActiveScene().name;
-
         if (instance == null)
         {
             instance = this;
@@ -34,35 +29,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        playBackgroundMusic();
-    }
-
-    private void playBackgroundMusic()
-    {
-        if (lastScene.Equals("Simulation Mode"))
-        {
-            Play("Simulation Mode");
-        }
-        else if (lastScene.Equals("Go Race"))
-        {
-            Play("Go Race");
-        }
-    }
-
-    void Update()
-    {
-        var currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene != lastScene)
-        {
-            lastScene = currentScene;
-            playBackgroundMusic();
-        }
-    }
-
     // Update is called once per frame
-    public void Play(string name)
+    public void PlayMusic(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
@@ -74,5 +42,16 @@ public class AudioManager : MonoBehaviour
         {
             s.source.Play();
         }
+    }
+
+    public void PlaySoundEffect(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.PlayOneShot(s.clip);      
     }
 }
