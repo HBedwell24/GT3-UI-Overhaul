@@ -69,6 +69,10 @@ public class LoadingManager : MonoBehaviour
         {
             AudioManager.instance.PlayMusic("GT Auto");
         }
+        else if (lastScene.Equals("Options") || lastScene.Equals("Save Screen") || lastScene.Equals("Load Screen") || lastScene.Equals("Library"))
+        {
+            AudioManager.instance.StopMusic();
+        }
     }
 
     void GetCurrentScene()

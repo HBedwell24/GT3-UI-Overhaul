@@ -43,7 +43,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09eb98bfe2705be41b80bbfeea7abead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
+  backgroundMusic:
+  - name: Are You Gonna Go My Way?
+    clip: {fileID: 8300000, guid: 2dacb647b28ff074b834795782f3199e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Satisfied
+    clip: {fileID: 8300000, guid: d9bf98b598c021342af8e7b3982a58d8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Stop The Rock
+    clip: {fileID: 8300000, guid: 9ab43ece9f0a88f479125ac83fb54ccb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Mad Skillz
+    clip: {fileID: 8300000, guid: 8ef18575a47921d40a147644edc19432, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Break In
+    clip: {fileID: 8300000, guid: 947e83239ad3ca146a42acb726edda74, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Glowl
+    clip: {fileID: 8300000, guid: 9decf629de65f2049ac17c7956302b85, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   - name: Simulation Mode
     clip: {fileID: 8300000, guid: e15229c0b59db4a4cb45013746baff23, type: 3}
     volume: 1
@@ -62,18 +98,6 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: GT Auto
-    clip: {fileID: 8300000, guid: 4eb8070a74868014d9d7e4fe3cc2a19f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Tune Shop
-    clip: {fileID: 8300000, guid: 997ac4c4ed107b94ba13307377b4e233, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
   - name: Car Dealer
     clip: {fileID: 8300000, guid: dbb5f599d9a5dd54ab40400d085bd0fe, type: 3}
     volume: 1
@@ -85,6 +109,31 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Tune Shop
+    clip: {fileID: 8300000, guid: 997ac4c4ed107b94ba13307377b4e233, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GT Auto
+    clip: {fileID: 8300000, guid: 4eb8070a74868014d9d7e4fe3cc2a19f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  soundEffects:
+  - name: Submenu Enter
+    clip: {fileID: 8300000, guid: 188f882ac894f4941b56742f33bcf3e6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Submenu Exit
+    clip: {fileID: 8300000, guid: 90fde6dcfbb3caf469e34c4f0ef9dbfb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: Menu Selection
     clip: {fileID: 8300000, guid: 2c974ff7cac2fdb49978fdb9ec974746, type: 3}
@@ -98,27 +147,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Submenu Enter
-    clip: {fileID: 8300000, guid: 90fde6dcfbb3caf469e34c4f0ef9dbfb, type: 3}
+  - name: Cursor
+    clip: {fileID: 8300000, guid: 21a8717e046093949be50de3c434d709, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    source: {fileID: 0}
-  - name: Submenu Exit
-    clip: {fileID: 8300000, guid: 188f882ac894f4941b56742f33bcf3e6, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Menu Scroll
-    clip: {fileID: 8300000, guid: a42dca1b0bf293441876227e260b4041, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GT Auto
-    clip: {fileID: 8300000, guid: 4eb8070a74868014d9d7e4fe3cc2a19f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
     source: {fileID: 0}
