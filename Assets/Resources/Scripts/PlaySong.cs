@@ -4,72 +4,44 @@ using UnityEngine.EventSystems;
 
 public class PlaySong : MonoBehaviour, ISelectHandler
 {
-    public AudioClip areYouGonna;
-    public AudioClip satisfied;
-    public AudioClip stopTheRock;
-    public AudioClip madSkillz;
-    public AudioClip breakIn;
-    public AudioClip glowl;
-    public AudioClip cursorSound;
-
-    public AudioSource audioSource;
-
     public void OnSelect(BaseEventData data)
     {
         Debug.Log(this.gameObject.name + " was selected");
+        AudioManager.instance.PlaySoundEffect("Cursor");
 
-        audioSource.clip = cursorSound;
-        audioSource.Play();
-
-        StartCoroutine(WaitForAudio(cursorSound));     
+        StartCoroutine(WaitForAudio());     
     }
 
-    private IEnumerator WaitForAudio(AudioClip clip)
+    private IEnumerator WaitForAudio()
     {
-        while (audioSource.isPlaying)
-        {
-            yield return null;
-        }
-
         if (gameObject.name.Equals("Mad Skillz"))
         {
-            audioSource.Stop();
-            audioSource.clip = madSkillz;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Mad Skillz");
         }
         else if (gameObject.name.Equals("Are You"))
         {
-            audioSource.Stop();
-            audioSource.clip = areYouGonna;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Are You Gonna Go My Way?");
         }
         else if (gameObject.name.Equals("Satisfied"))
         {
-            audioSource.Stop();
-            audioSource.clip = satisfied;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Satisfied");
         }
         else if (gameObject.name.Equals("Stop the Rock"))
         {
-            audioSource.Stop();
-            audioSource.clip = stopTheRock;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Stop The Rock");
         }
         else if (gameObject.name.Equals("Break In"))
         {
-            audioSource.Stop();
-            audioSource.clip = breakIn;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Break In");
         }
         else if (gameObject.name.Equals("Glowl"))
         {
-            audioSource.Stop();
-            audioSource.clip = glowl;
-            audioSource.Play();
+            AudioManager.instance.PlayMusic("Glowl");
         }
         else
         {
-            audioSource.Stop();
+            AudioManager.instance.StopMusic();
         }
+        yield return null;
     }
 }

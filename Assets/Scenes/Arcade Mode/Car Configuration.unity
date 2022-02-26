@@ -1671,7 +1671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aec94903c4e9fb4d83a47d3fa3b2ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingManager: {fileID: 0}
+  loadingManager: {fileID: 2055310460}
   colorSelectionPrompt: {fileID: 1525680054}
   transmissionPrompt: {fileID: 1146497268}
   raceDifficultySelection: {fileID: 1569120642}
