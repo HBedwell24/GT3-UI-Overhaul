@@ -43,11 +43,31 @@ public class LoadingManager : MonoBehaviour
     {
         if (lastScene.Equals("Simulation Mode"))
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Simulation Mode");
+            AudioManager.instance.PlayMusic("Simulation Mode");
         }
-        else if (lastScene.Equals("Go Race") || lastScene.Equals("Single Player") || lastScene.Equals("Car Selection") || lastScene.Equals("Track Selection") || lastScene.Equals("Car Selection"))
+        else if (lastScene.Equals("Single Player") || lastScene.Equals("Go Race"))
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Go Race");
+            AudioManager.instance.PlayMusic("Go Race");
+        }
+        else if (lastScene.Equals("License Center"))
+        {
+            AudioManager.instance.PlayMusic("License Center");
+        }
+        else if (lastScene.Equals("Car Dealer"))
+        {
+            AudioManager.instance.PlayMusic("Car Dealer");
+        }
+        else if (lastScene.Equals("My Home"))
+        {
+            AudioManager.instance.PlayMusic("My Home");
+        }
+        else if (lastScene.Equals("Tune Shop") || lastScene.Equals("Machine Test"))
+        {
+            AudioManager.instance.PlayMusic("Tune Shop");
+        }
+        else if (lastScene.Equals("GT Auto"))
+        {
+            AudioManager.instance.PlayMusic("GT Auto");
         }
     }
 
@@ -86,11 +106,11 @@ public class LoadingManager : MonoBehaviour
     {
         if (isEntrance)
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Menu Selection");
+            AudioManager.instance.PlaySoundEffect("Menu Selection");
         }
         else
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Menu Exit");
+            AudioManager.instance.PlaySoundEffect("Menu Exit");
         }
 
         isLoading = true;
@@ -134,11 +154,11 @@ public class LoadingManager : MonoBehaviour
     {
         if (isEntrance)
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Menu Selection");
+            AudioManager.instance.PlaySoundEffect("Menu Selection");
         }
         else
         {
-            FindObjectOfType<AudioManager>().PlayMusic("Menu Exit");
+            AudioManager.instance.PlaySoundEffect("Menu Exit");
         }
 
         isLoading = true;

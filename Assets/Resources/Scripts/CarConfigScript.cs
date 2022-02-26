@@ -59,7 +59,7 @@ public class CarConfigScript : MonoBehaviour
     {
         // increment to 2
         counter++;
-        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
+        AudioManager.instance.PlaySoundEffect("Submenu Enter");
 
         colorSelectionPrompt.alpha = 0;
         colorSelectionPrompt.interactable = false;
@@ -74,7 +74,7 @@ public class CarConfigScript : MonoBehaviour
     {
         // increment to 3
         counter++;
-        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
+        AudioManager.instance.PlaySoundEffect("Submenu Enter");
 
         transmissionPrompt.alpha = 0;
         transmissionPrompt.interactable = false;
@@ -89,7 +89,7 @@ public class CarConfigScript : MonoBehaviour
     {
         // increment to 4
         counter++;
-        FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Enter");
+        AudioManager.instance.PlaySoundEffect("Submenu Enter");
 
         raceDifficultySelection.alpha = 0;
         raceDifficultySelection.interactable = false;
@@ -114,7 +114,7 @@ public class CarConfigScript : MonoBehaviour
         {
             case 2:
                 counter--;
-                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
+                AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                 transmissionPrompt.alpha = 0;
                 transmissionPrompt.interactable = false;
@@ -127,7 +127,7 @@ public class CarConfigScript : MonoBehaviour
 
             case 3:
                 counter--;
-                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
+                AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                 raceDifficultySelection.alpha = 0;
                 raceDifficultySelection.interactable = false;
@@ -141,7 +141,7 @@ public class CarConfigScript : MonoBehaviour
 
             case 4:
                 counter--;
-                FindObjectOfType<AudioManager>().PlaySoundEffect("Submenu Exit");
+                AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                 racePrompt.alpha = 0;
                 racePrompt.interactable = false;
