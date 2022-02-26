@@ -33,13 +33,14 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Sound: " + name + " not found!");
-            return;
-        }
+
         if (!s.source.isPlaying)
         {
+            foreach (Sound sound in sounds)
+            {
+                sound.source.Stop();
+            }
+            s.source.clip = s.clip;
             s.source.Play();
         }
     }

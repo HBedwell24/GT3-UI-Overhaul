@@ -45,18 +45,15 @@ public class LoadingManager : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().PlayMusic("Simulation Mode");
         }
-        else if (lastScene.Equals("Go Race") || lastScene.Equals("Single Player"))
+        else if (lastScene.Equals("Go Race") || lastScene.Equals("Single Player") || lastScene.Equals("Car Selection") || lastScene.Equals("Track Selection") || lastScene.Equals("Car Selection"))
         {
             FindObjectOfType<AudioManager>().PlayMusic("Go Race");
         }
     }
 
-    void onSceneLoaded()
+    void GetCurrentScene()
     {
         var currentScene = SceneManager.GetActiveScene().name;
-
-        Debug.Log(lastScene);
-        Debug.Log(currentScene);
 
         if (currentScene != lastScene)
         {
@@ -109,8 +106,17 @@ public class LoadingManager : MonoBehaviour
         while (!Fade(0))
             yield return null;
 
-        SceneManager.LoadSceneAsync(targetScene);
-        
+        AsyncOperation op = SceneManager.LoadSceneAsync(targetScene);
+        float elapsedLoadTime = 0f;
+
+        while (!op.isDone)
+        {
+            elapsedLoadTime += Time.deltaTime;
+            yield return null;
+        }
+
+        GetCurrentScene();
+
         while (!Fade(1))
             yield return null;
 
@@ -121,6 +127,7 @@ public class LoadingManager : MonoBehaviour
 
         isLoading = false;
         Destroy(gameObject);
+        
     }
 
     private IEnumerator LoadAdvancedFadeRoutine()
@@ -157,7 +164,9 @@ public class LoadingManager : MonoBehaviour
             yield return null;
         }
 
-        while(elapsedLoadTime < MinLoadTime)
+        GetCurrentScene();
+
+        while (elapsedLoadTime < MinLoadTime)
         {
             elapsedLoadTime += Time.deltaTime;
             yield return null;
@@ -173,6 +182,7 @@ public class LoadingManager : MonoBehaviour
 
         isLoading = false;
         Destroy(gameObject);
+        
     }
 
     private bool Fade(float target)
