@@ -151,7 +151,6 @@ public class LoadingManager : MonoBehaviour
 
         isLoading = false;
         Destroy(gameObject);
-        
     }
 
     private IEnumerator LoadAdvancedFadeRoutine()
@@ -206,7 +205,6 @@ public class LoadingManager : MonoBehaviour
 
         isLoading = false;
         Destroy(gameObject);
-        
     }
 
     private bool Fade(float target)
