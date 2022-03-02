@@ -32,12 +32,12 @@ public class SliderMenuAnim : MonoBehaviour
                 // fade from opaque to transparent
                 if (isOpen)
                 {
-                    AudioManager.instance.PlaySoundEffect("Submenu Enter");
+                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
                 }
                 // fade from transparent to opaque
                 else
                 {
-                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                    AudioManager.instance.PlaySoundEffect("Submenu Enter");
                 }
                 StartCoroutine(FadeImage(isOpen));
             }
