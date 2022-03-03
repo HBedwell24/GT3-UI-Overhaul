@@ -868,8 +868,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66.8, y: 141.4}
-  m_SizeDelta: {x: 120, y: 30}
+  m_AnchoredPosition: {x: 83.10652, y: 141.4}
+  m_SizeDelta: {x: 152.613, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972297815
 MonoBehaviour:
@@ -904,7 +904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Clio R.S.
+  m_Text: 240SX SE '93
 --- !u!222 &972297816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1829,7 +1829,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 440 PP/252 BHP/1153 kg
+  m_Text: 285 PP/285 BHP/1200 kg
 --- !u!222 &1824610209
 CanvasRenderer:
   m_ObjectHideFlags: 0

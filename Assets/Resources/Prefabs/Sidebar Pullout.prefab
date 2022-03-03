@@ -540,7 +540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104.27579, y: 2.5}
+  m_AnchoredPosition: {x: -45.7, y: 2.5}
   m_SizeDelta: {x: 84.192, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7764262520731944632
@@ -913,8 +913,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 195.9042, y: 1.5}
-  m_SizeDelta: {x: 250.551, y: 38}
+  m_AnchoredPosition: {x: 214.02206, y: 1.5}
+  m_SizeDelta: {x: 169.6351, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7764262521394133068
 CanvasRenderer:
@@ -957,7 +957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2003 Altezza RS200
+  m_Text: 240SX SE '93
 --- !u!1 &7764262521395139503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,8 +1069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd85379cb8701454696653c3dffe37f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subMenuEnter: {fileID: 0}
-  subMenuExit: {fileID: 0}
   PanelMenu: {fileID: 7764262521395139503}
   sideBar: {fileID: 7764262521858387039}
   seperator: {fileID: 7764262520069527225}
@@ -1108,7 +1106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.724243, y: 2.5}
+  m_AnchoredPosition: {x: 81.29999, y: 2.5}
   m_SizeDelta: {x: 35.75, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7764262521762689635
@@ -1183,7 +1181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194.27582, y: 1.5}
+  m_AnchoredPosition: {x: -135.70007, y: 1.5}
   m_SizeDelta: {x: 39.7, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7764262521835645714
