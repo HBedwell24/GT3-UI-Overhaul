@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 518092844}
   - component: {fileID: 518092843}
   - component: {fileID: 518092842}
+  - component: {fileID: 518092845}
   m_Layer: 5
   m_Name: Legal Credits
   m_TagString: Untagged
@@ -909,6 +910,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518092840}
   m_CullTransparentMesh: 1
+--- !u!95 &518092845
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518092840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &529276515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,6 +2222,7 @@ GameObject:
   - component: {fileID: 1297646066}
   - component: {fileID: 1297646065}
   - component: {fileID: 1297646064}
+  - component: {fileID: 1297646067}
   m_Layer: 5
   m_Name: Free Run
   m_TagString: Untagged
@@ -2310,6 +2331,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297646062}
   m_CullTransparentMesh: 1
+--- !u!95 &1297646067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297646062}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1300703099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3122,6 +3162,7 @@ GameObject:
   - component: {fileID: 2068992411}
   - component: {fileID: 2068992410}
   - component: {fileID: 2068992409}
+  - component: {fileID: 2068992412}
   m_Layer: 5
   m_Name: Car List
   m_TagString: Untagged
@@ -3242,3 +3283,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068992407}
   m_CullTransparentMesh: 1
+--- !u!95 &2068992412
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068992407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

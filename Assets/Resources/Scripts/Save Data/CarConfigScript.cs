@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class CarConfigScript : MonoBehaviour
@@ -162,7 +161,7 @@ public class CarConfigScript : MonoBehaviour
                 break;
 
             default:
-                loadingManager.GetComponent<LoadingManager>().LoadScene("Courtesy Cars,false");
+                //loadingManager.GetComponent<LoadingManager>().LoadScene(InputAction.context, "Courtesy Cars,false");
                 break;
         }
     }

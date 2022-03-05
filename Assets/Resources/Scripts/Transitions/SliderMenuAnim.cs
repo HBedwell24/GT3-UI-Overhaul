@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SliderMenuAnim : MonoBehaviour
 {
@@ -19,27 +20,30 @@ public class SliderMenuAnim : MonoBehaviour
         seperator.alpha = 0;
     }
 
-    public void ShowHideMenu()
+    public void ShowHideMenu(InputAction.CallbackContext context)
     {
-        if(PanelMenu != null)
+        if(context.performed)
         {
-            Animator animator = PanelMenu.GetComponent<Animator>();
-            if (animator != null)
+            if (PanelMenu != null)
             {
-                bool isOpen = animator.GetBool("show");
-                animator.SetBool("show", !isOpen);
+                Animator animator = PanelMenu.GetComponent<Animator>();
+                if (animator != null)
+                {
+                    bool isOpen = animator.GetBool("show");
+                    animator.SetBool("show", !isOpen);
 
-                // fade from opaque to transparent
-                if (isOpen)
-                {
-                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                    // fade from opaque to transparent
+                    if (isOpen)
+                    {
+                        AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                    }
+                    // fade from transparent to opaque
+                    else
+                    {
+                        AudioManager.instance.PlaySoundEffect("Submenu Enter");
+                    }
+                    StartCoroutine(FadeImage(isOpen));
                 }
-                // fade from transparent to opaque
-                else
-                {
-                    AudioManager.instance.PlaySoundEffect("Submenu Enter");
-                }
-                StartCoroutine(FadeImage(isOpen));
             }
         }
     }

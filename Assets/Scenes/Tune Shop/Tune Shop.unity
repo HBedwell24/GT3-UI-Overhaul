@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 441634630}
   - component: {fileID: 441634629}
   - component: {fileID: 441634628}
+  - component: {fileID: 441634631}
   m_Layer: 5
   m_Name: Turbo Kit System
   m_TagString: Untagged
@@ -463,6 +464,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441634626}
   m_CullTransparentMesh: 1
+--- !u!95 &441634631
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441634626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &451280274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,6 +597,7 @@ GameObject:
   - component: {fileID: 471022054}
   - component: {fileID: 471022053}
   - component: {fileID: 471022052}
+  - component: {fileID: 471022055}
   m_Layer: 5
   m_Name: Drivetrain
   m_TagString: Untagged
@@ -685,6 +706,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471022050}
   m_CullTransparentMesh: 1
+--- !u!95 &471022055
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471022050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &666254634
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +869,7 @@ GameObject:
   - component: {fileID: 726310861}
   - component: {fileID: 726310860}
   - component: {fileID: 726310859}
+  - component: {fileID: 726310862}
   m_Layer: 5
   m_Name: Tires
   m_TagString: Untagged
@@ -937,6 +978,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726310857}
   m_CullTransparentMesh: 1
+--- !u!95 &726310862
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726310857}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &936277718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1164,6 +1224,7 @@ GameObject:
   - component: {fileID: 1165654412}
   - component: {fileID: 1165654411}
   - component: {fileID: 1165654410}
+  - component: {fileID: 1165654413}
   m_Layer: 5
   m_Name: Suspension & Brakes
   m_TagString: Untagged
@@ -1284,6 +1345,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165654408}
   m_CullTransparentMesh: 1
+--- !u!95 &1165654413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165654408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1176124527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1560,7 @@ GameObject:
   - component: {fileID: 1197460666}
   - component: {fileID: 1197460665}
   - component: {fileID: 1197460664}
+  - component: {fileID: 1197460667}
   m_Layer: 5
   m_Name: Engine & Intake System
   m_TagString: Untagged
@@ -1588,6 +1669,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197460662}
   m_CullTransparentMesh: 1
+--- !u!95 &1197460667
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197460662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1500128388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2096,7 @@ GameObject:
   - component: {fileID: 1773450277}
   - component: {fileID: 1773450276}
   - component: {fileID: 1773450275}
+  - component: {fileID: 1773450278}
   m_Layer: 5
   m_Name: Stability Control & Others
   m_TagString: Untagged
@@ -2104,3 +2205,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773450273}
   m_CullTransparentMesh: 1
+--- !u!95 &1773450278
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773450273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5043095ac91494408b5be77b7008282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

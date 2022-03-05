@@ -27,6 +27,7 @@ public class CursorBehavior : MonoBehaviour
                 }
                 else
                 {
+                    AudioManager.instance.PlaySoundEffect("Cursor");
                     indicatorPos = 0;
                 }
                 moveTimer = 0;
@@ -43,6 +44,7 @@ public class CursorBehavior : MonoBehaviour
                 }
                 else
                 {
+                    AudioManager.instance.PlaySoundEffect("Cursor");
                     indicatorPos = charBtn.Length - 1;
                 }
                 moveTimer = 0;

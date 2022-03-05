@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class LoadingManager : MonoBehaviour
 
     public Image FadeImage;
     public float FadeTime;
+
+    public PlayerInput playerInput;
 
     private string targetScene;
     private bool isLoading;
