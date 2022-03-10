@@ -33,7 +33,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""id"": ""bc30e69d-9b04-4b07-bdf2-06b5cac96f2d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(pressPoint=1)"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -42,7 +42,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""id"": ""784ccbc7-8d94-4339-94da-830594d99439"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(pressPoint=1)"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -105,7 +105,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""id"": ""1b2a4d07-33fa-4ccd-ba82-b247ae01eaab"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(pressPoint=1)"",
                     ""initialStateCheck"": false
                 }
             ],
@@ -114,7 +114,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""c86f2e53-538b-4999-8fbf-ad8a56c1d214"",
                     ""path"": ""<DualShockGamepad>/buttonSouth"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Playstation Control Scheme"",
                     ""action"": ""Proceed"",
@@ -125,7 +125,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""0c6d57af-e18f-41d5-95d7-ea91e76fac5b"",
                     ""path"": ""<DualShockGamepad>/buttonEast"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Playstation Control Scheme"",
                     ""action"": ""Go Back"",
