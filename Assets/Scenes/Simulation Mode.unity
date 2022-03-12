@@ -1308,7 +1308,7 @@ MonoBehaviour:
     m_ActionName: Menu/Pan Right[/DualShock4GamepadHID/rightShoulder]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1967493050}
         m_TargetAssemblyTypeName: SliderMenuAnim, Assembly-CSharp
         m_MethodName: ShowHideMenu
         m_Mode: 0
@@ -3683,6 +3683,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2d27e2d38ff874da5b9923a2b3818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1967493049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4216240185103434181, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+  m_PrefabInstance: {fileID: 4216240185239219574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1967493050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4216240185103434190, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+  m_PrefabInstance: {fileID: 4216240185239219574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967493049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd85379cb8701454696653c3dffe37f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2111144809
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,6 +3856,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 655690463}
     m_Modifications:
+    - target: {fileID: 4216240184713340500, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216240184713340500, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216240184713340500, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1967493049}
+    - target: {fileID: 4216240184713340500, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

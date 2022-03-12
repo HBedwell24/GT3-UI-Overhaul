@@ -105,7 +105,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""id"": ""1b2a4d07-33fa-4ccd-ba82-b247ae01eaab"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press(pressPoint=1)"",
+                    ""interactions"": """",
                     ""initialStateCheck"": false
                 }
             ],
