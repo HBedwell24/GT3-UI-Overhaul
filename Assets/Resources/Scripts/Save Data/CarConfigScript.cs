@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CarConfigScript : MonoBehaviour
 {
@@ -107,62 +108,65 @@ public class CarConfigScript : MonoBehaviour
         racePrompt.blocksRaycasts = true;
     }
 
-    public void PromptExit()
+    public void PromptExit(InputAction.CallbackContext context)
     {
-        switch (counter)
+        if (context.performed)
         {
-            case 2:
-                counter--;
-                AudioManager.instance.PlaySoundEffect("Submenu Exit");
+            switch (counter)
+            {
+                case 2:
+                    counter--;
+                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
-                transmissionPrompt.alpha = 0;
-                transmissionPrompt.interactable = false;
-                transmissionPrompt.blocksRaycasts = false;
+                    transmissionPrompt.alpha = 0;
+                    transmissionPrompt.interactable = false;
+                    transmissionPrompt.blocksRaycasts = false;
 
-                colorSelectionPrompt.alpha = 1;
-                colorSelectionPrompt.interactable = true;
-                colorSelectionPrompt.blocksRaycasts = true;
-                break;
+                    colorSelectionPrompt.alpha = 1;
+                    colorSelectionPrompt.interactable = true;
+                    colorSelectionPrompt.blocksRaycasts = true;
+                    break;
 
-            case 3:
-                counter--;
-                AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                case 3:
+                    counter--;
+                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
-                raceDifficultySelection.alpha = 0;
-                raceDifficultySelection.interactable = false;
-                raceDifficultySelection.blocksRaycasts = false;
+                    raceDifficultySelection.alpha = 0;
+                    raceDifficultySelection.interactable = false;
+                    raceDifficultySelection.blocksRaycasts = false;
 
-                transmissionPrompt.alpha = 1;
-                transmissionPrompt.interactable = true;
-                transmissionPrompt.blocksRaycasts = true;
-                
-                break;
+                    transmissionPrompt.alpha = 1;
+                    transmissionPrompt.interactable = true;
+                    transmissionPrompt.blocksRaycasts = true;
 
-            case 4:
-                counter--;
-                AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                    break;
 
-                racePrompt.alpha = 0;
-                racePrompt.interactable = false;
-                racePrompt.blocksRaycasts = false;
+                case 4:
+                    counter--;
+                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
-                panel.alpha = 0;
+                    racePrompt.alpha = 0;
+                    racePrompt.interactable = false;
+                    racePrompt.blocksRaycasts = false;
 
-                controls.alpha = 1;
-                controls.interactable = true;
-                controls.blocksRaycasts = true;
+                    panel.alpha = 0;
 
-                carInformation.alpha = 1;
+                    controls.alpha = 1;
+                    controls.interactable = true;
+                    controls.blocksRaycasts = true;
 
-                raceDifficultySelection.alpha = 1;
-                raceDifficultySelection.interactable = true;
-                raceDifficultySelection.blocksRaycasts = true;
-                
-                break;
+                    carInformation.alpha = 1;
 
-            default:
-                //loadingManager.GetComponent<LoadingManager>().LoadScene(InputAction.context, "Courtesy Cars,false");
-                break;
+                    raceDifficultySelection.alpha = 1;
+                    raceDifficultySelection.interactable = true;
+                    raceDifficultySelection.blocksRaycasts = true;
+
+                    break;
+
+                default:
+                    //loadingManager.GetComponent<LoadingManager>().LoadScene(InputAction.context, "Courtesy Cars,false");
+                    break;
+            }
         }
     }
 }
