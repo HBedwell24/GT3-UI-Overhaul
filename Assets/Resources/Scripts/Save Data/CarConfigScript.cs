@@ -164,7 +164,7 @@ public class CarConfigScript : MonoBehaviour
                     break;
 
                 default:
-                    //loadingManager.GetComponent<LoadingManager>().LoadScene(InputAction.context, "Courtesy Cars,false");
+                    loadingManager.GetComponent<LoadingManager>().goBackToCourtesyCars(context);
                     break;
             }
         }

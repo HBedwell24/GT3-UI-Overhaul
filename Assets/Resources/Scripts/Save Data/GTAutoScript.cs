@@ -210,7 +210,7 @@ public class GTAutoScript : MonoBehaviour
                     break;
 
                 default:
-                    //loadingManager.GetComponent<LoadingManager>().LoadScene(InputAction.context, "Courtesy Cars,false");
+                    loadingManager.GetComponent<LoadingManager>().goBackToSimulationMode(context);
                     break;
             }
         }

@@ -99,7 +99,7 @@ public class LoadingManager : MonoBehaviour
     {
         if (context.performed)
         {
-            StartCoroutine(LoadAdvancedFadeRoutine("Single Player", false));
+            StartCoroutine(LoadBasicFadeRoutine("Single Player", false));
         }
     }
 
@@ -107,7 +107,7 @@ public class LoadingManager : MonoBehaviour
     {
         if (context.performed)
         {
-            StartCoroutine(LoadAdvancedFadeRoutine("Track Selection", false));
+            StartCoroutine(LoadBasicFadeRoutine("Track Selection", false));
         }
     }
 
@@ -115,7 +115,7 @@ public class LoadingManager : MonoBehaviour
     {
         if (context.performed)
         {
-            StartCoroutine(LoadAdvancedFadeRoutine("Car Selection", false));
+            StartCoroutine(LoadBasicFadeRoutine("Car Selection", false));
         }
     }
 
