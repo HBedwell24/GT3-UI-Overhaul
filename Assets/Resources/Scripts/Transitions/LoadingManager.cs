@@ -18,9 +18,7 @@ public class LoadingManager : MonoBehaviour
 
     public PlayerInput playerInput;
 
-    private string targetScene;
     private bool isLoading;
-    private bool isEntrance;
 
     private string lastScene;
 
@@ -48,7 +46,7 @@ public class LoadingManager : MonoBehaviour
         {
             AudioManager.instance.PlayMusic("Simulation Mode");
         }
-        else if (lastScene.Equals("Single Player") || lastScene.Equals("Go Race"))
+        else if (lastScene.Equals("Single Player") || lastScene.Equals("Track Selection")  || lastScene.Equals("Go Race"))
         {
             AudioManager.instance.PlayMusic("Go Race");
         }
@@ -89,27 +87,131 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
+    public void goBackToSimulationMode(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadAdvancedFadeRoutine("Simulation Mode", false));
+        }
+    }
+
+    public void goBackToSinglePlayer(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadAdvancedFadeRoutine("Single Player", false));
+        }
+    }
+
+    public void goBackToTrackSelection(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadAdvancedFadeRoutine("Track Selection", false));
+        }
+    }
+
+    public void goBackToCarSelection(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadAdvancedFadeRoutine("Car Selection", false));
+        }
+    }
+
+    public void goBackToCourtesyCars(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Courtesy Cars", false));
+        }
+    }
+
+    public void goBackToCarDealer(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Car Dealer", false));
+        }
+    }
+
+    public void goBackToCarDealerManufacturer(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Car Dealer Manufacturer", false));
+        }
+    }
+
+    public void goBackToGoRace(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Go Race", false));
+        }
+    }
+
+    public void goBackToCupSelectionScreen(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Cup Selection Screen", false));
+        }
+    }
+
+    public void goBackToCupDetailScreen(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Cup Detail Screen", false));
+        }
+    }
+
+    public void goBackToLicenseCenter(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("License Center", false));
+        }
+    }
+
+    public void goBackToMyHome(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("My Home", false));
+        }
+    }
+
+    public void goBackToSaveScreen(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Save Screen", false));
+        }
+    }
+
+    public void goBackToTuneShop(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Tune Shop", false));
+        }
+    }
+
     public void LoadScene(string parameters)
     {
         var parameterArray = parameters.Split(',');
-
-        targetScene = parameterArray[0];
-        isEntrance = bool.Parse(parameterArray[1]);
-
-        StartCoroutine(LoadBasicFadeRoutine());
+        StartCoroutine(LoadBasicFadeRoutine(parameterArray[0], bool.Parse(parameterArray[1])));
     }
 
     public void LoadSceneWithTransition(string parameters)
     {
         var parameterArray = parameters.Split(',');
-
-        targetScene = parameterArray[0];
-        isEntrance = bool.Parse(parameterArray[1]);
-
-        StartCoroutine(LoadAdvancedFadeRoutine());
+        StartCoroutine(LoadAdvancedFadeRoutine(parameterArray[0], bool.Parse(parameterArray[1])));
     }
 
-    private IEnumerator LoadBasicFadeRoutine()
+    private IEnumerator LoadBasicFadeRoutine(string scene, bool isEntrance)
     {
         if (isEntrance)
         {
@@ -133,7 +235,7 @@ public class LoadingManager : MonoBehaviour
         while (!Fade(0))
             yield return null;
 
-        AsyncOperation op = SceneManager.LoadSceneAsync(targetScene);
+        AsyncOperation op = SceneManager.LoadSceneAsync(scene);
         float elapsedLoadTime = 0f;
 
         while (!op.isDone)
@@ -156,7 +258,7 @@ public class LoadingManager : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator LoadAdvancedFadeRoutine()
+    private IEnumerator LoadAdvancedFadeRoutine(string scene, bool isEntrance)
     {
         if (isEntrance)
         {
@@ -181,7 +283,7 @@ public class LoadingManager : MonoBehaviour
         while (!Fade(0))
             yield return null;
 
-        AsyncOperation op = SceneManager.LoadSceneAsync(targetScene);
+        AsyncOperation op = SceneManager.LoadSceneAsync(scene);
         float elapsedLoadTime = 0f;
 
         while(!op.isDone)
