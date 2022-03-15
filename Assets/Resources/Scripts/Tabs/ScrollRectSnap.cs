@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 using System;
 
@@ -25,7 +24,7 @@ public class ScrollRectSnap : MonoBehaviour
 	[Tooltip("Snap vertically")]
 	public bool snapInV = true;
 
-	public string controllTag;
+	public string controlTag;
 	bool dragInit = true;
 	int dragStartNearest;
 	float horizontalNormalizedPosition;
@@ -88,7 +87,7 @@ public class ScrollRectSnap : MonoBehaviour
 					}
 					if (OnEndReachedWithTag != null)
 					{
-						OnEndReachedWithTag(1, target, controllTag);
+						OnEndReachedWithTag(1, target, controlTag);
 					}
 				}
 				else if (target == 0)
@@ -99,7 +98,7 @@ public class ScrollRectSnap : MonoBehaviour
 					}
 					if (OnEndReachedWithTag != null)
 					{
-						OnEndReachedWithTag(-1, target, controllTag);
+						OnEndReachedWithTag(-1, target, controlTag);
 					}
 				}
 				else
@@ -110,7 +109,7 @@ public class ScrollRectSnap : MonoBehaviour
 					}
 					if (OnEndReachedWithTag != null)
 					{
-						OnEndReachedWithTag(0, target, controllTag);
+						OnEndReachedWithTag(0, target, controlTag);
 					}
 				}
 

@@ -1,17 +1,23 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WidgetClickEvents : MonoBehaviour
 {
-    public void UpArrowPressed()
+    public void R1Pressed(InputAction.CallbackContext context)
     {
-        ScrollRectSnap snapper = GetComponentInChildren<ScrollRectSnap>();
-        snapper.DraggedOnLeft();
+        if (context.performed)
+        {
+            ScrollRectSnap snapper = GetComponentInChildren<ScrollRectSnap>();
+            snapper.DraggedOnLeft();
+        }
     }
 
-    public void DownArrowPressed()
+    public void L1Pressed(InputAction.CallbackContext context)
     {
-        ScrollRectSnap snapper = GetComponentInChildren<ScrollRectSnap>();
-        snapper.DraggedOnRight();
-
+        if (context.performed)
+        {
+            ScrollRectSnap snapper = GetComponentInChildren<ScrollRectSnap>();
+            snapper.DraggedOnRight();
+        }
     }
 }

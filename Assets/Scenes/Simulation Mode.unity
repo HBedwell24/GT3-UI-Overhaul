@@ -437,8 +437,8 @@ GameObject:
   - component: {fileID: 264288923}
   - component: {fileID: 264288924}
   m_Layer: 5
-  m_Name: My Home (2)
-  m_TagString: Untagged
+  m_Name: GT Auto
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 268174434}
   - component: {fileID: 268174433}
   m_Layer: 5
-  m_Name: Cars (1)
+  m_Name: Tuning & Servicing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,14 +837,14 @@ RectTransform:
   - {fileID: 687952054}
   - {fileID: 1383895144}
   - {fileID: 874474857}
-  - {fileID: 1323528798}
   - {fileID: 649706012}
+  - {fileID: 1323528798}
   - {fileID: 268174432}
   - {fileID: 264288920}
   - {fileID: 1820359164}
+  - {fileID: 983522575}
   - {fileID: 2111144810}
   - {fileID: 1110529429}
-  - {fileID: 983522575}
   m_Father: {fileID: 855863573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1005,8 +1005,8 @@ GameObject:
   - component: {fileID: 649706013}
   - component: {fileID: 649706016}
   m_Layer: 5
-  m_Name: My Home (1)
-  m_TagString: Untagged
+  m_Name: Car Dealer
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1023,7 +1023,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582646802}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1299,11 +1299,35 @@ MonoBehaviour:
     m_ActionId: a16989f8-8b1a-45c5-9d65-392e406653ce
     m_ActionName: Menu/Go Up[/DualShock4GamepadHID/dpad/up,/DualShock4GamepadHID/leftStick/up]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586246023}
+        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
+        m_MethodName: L1Pressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c9572160-c372-476f-9d6a-09aff715076a
     m_ActionName: Menu/Pan Left[/DualShock4GamepadHID/leftShoulder]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586246023}
+        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
+        m_MethodName: R1Pressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 970b2fef-acf8-416b-b1ac-ef1ecc270c2e
     m_ActionName: Menu/Pan Right[/DualShock4GamepadHID/rightShoulder]
   - m_PersistentCalls:
@@ -1342,7 +1366,7 @@ GameObject:
   - component: {fileID: 687952058}
   m_Layer: 5
   m_Name: Go Race
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1568,7 +1592,7 @@ GameObject:
   - component: {fileID: 801222298}
   m_Layer: 5
   m_Name: L1 Button
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1673,19 +1697,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 801222296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 586246023}
-        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
-        m_MethodName: UpArrowPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &835776116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1805,7 @@ GameObject:
   - component: {fileID: 845087246}
   m_Layer: 5
   m_Name: R1 Button
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,19 +1910,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 845087244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 586246023}
-        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
-        m_MethodName: DownArrowPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &845809866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,7 +1927,7 @@ GameObject:
   - component: {fileID: 845809872}
   m_Layer: 5
   m_Name: Single Player
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2196,12 +2196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e9b743e0565aa45b1b41e409d4f6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screens: 1
-  snapSpeed: 0
+  screens: 5
+  snapSpeed: 1
   inertiaCutoffMagnitude: 0
   snapInH: 1
   snapInV: 0
-  controllTag: 
+  controlTag: 
 --- !u!1 &874474856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,8 +2370,8 @@ GameObject:
   - component: {fileID: 983522576}
   - component: {fileID: 983522578}
   m_Layer: 5
-  m_Name: My Home (4)
-  m_TagString: Untagged
+  m_Name: Machine Test
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2388,7 +2388,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582646802}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2549,8 +2549,8 @@ GameObject:
   - component: {fileID: 1110529432}
   - component: {fileID: 1110529433}
   m_Layer: 5
-  m_Name: My Home (5)
-  m_TagString: Untagged
+  m_Name: Gallery
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2567,7 +2567,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582646802}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2778,7 +2778,7 @@ GameObject:
   - component: {fileID: 1309440655}
   m_Layer: 5
   m_Name: Party Play
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2942,7 +2942,7 @@ GameObject:
   - component: {fileID: 1323528802}
   m_Layer: 5
   m_Name: My Home
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2959,7 +2959,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582646802}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3094,7 +3094,7 @@ GameObject:
   - component: {fileID: 1383895148}
   m_Layer: 5
   m_Name: License Center
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3477,8 +3477,8 @@ GameObject:
   - component: {fileID: 1820359167}
   - component: {fileID: 1820359168}
   m_Layer: 5
-  m_Name: My Home (3)
-  m_TagString: Untagged
+  m_Name: Tune Shop
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3711,7 +3711,7 @@ GameObject:
   - component: {fileID: 2111144812}
   - component: {fileID: 2111144811}
   m_Layer: 5
-  m_Name: Cars (2)
+  m_Name: My Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3729,7 +3729,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582646802}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

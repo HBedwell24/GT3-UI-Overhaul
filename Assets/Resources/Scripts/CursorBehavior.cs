@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CursorBehavior : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class CursorBehavior : MonoBehaviour
         {
             moveTimer += Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Gamepad.current.dpad.right.IsPressed() || Gamepad.current.leftStick.right.IsPressed())
         {
             if (moveTimer >= moveDelay)
             {
@@ -33,7 +34,7 @@ public class CursorBehavior : MonoBehaviour
                 moveTimer = 0;
             }
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
         {
             if (moveTimer >= moveDelay)
             {
