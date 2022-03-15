@@ -122,6 +122,12 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Moon Over The Castle
+    clip: {fileID: 8300000, guid: 351ad8bae3422e84b8c0ee90512bbdf7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   soundEffects:
   - name: Submenu Enter
     clip: {fileID: 8300000, guid: 188f882ac894f4941b56742f33bcf3e6, type: 3}

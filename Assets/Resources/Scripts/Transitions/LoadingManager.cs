@@ -42,7 +42,11 @@ public class LoadingManager : MonoBehaviour
 
     private void playBackgroundMusic()
     {
-        if (lastScene.Equals("Simulation Mode"))
+        if (lastScene.Equals("Launch Screen"))
+        {
+            AudioManager.instance.PlayMusic("Moon Over The Castle");
+        }
+        else if (lastScene.Equals("Simulation Mode"))
         {
             AudioManager.instance.PlayMusic("Simulation Mode");
         }
@@ -84,6 +88,14 @@ public class LoadingManager : MonoBehaviour
         {
             lastScene = currentScene;
             playBackgroundMusic();
+        }
+    }
+
+    public void goBackToLaunchScreen(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(LoadBasicFadeRoutine("Launch Screen", false));
         }
     }
 
