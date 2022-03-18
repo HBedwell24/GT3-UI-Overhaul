@@ -153,7 +153,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 655690463}
-  m_RootOrder: 1
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 293358305}
+  m_FirstSelected: {fileID: 1090816362}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &244704687
@@ -365,11 +365,11 @@ RectTransform:
   m_Children:
   - {fileID: 457359505}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 85.97}
+  m_AnchoredPosition: {x: 269.99997, y: 85.97}
   m_SizeDelta: {x: 255.97, y: 255.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293358307
@@ -471,11 +471,11 @@ RectTransform:
   m_Children:
   - {fileID: 1688333148}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 402, y: 224.01}
+  m_AnchoredPosition: {x: 597, y: 224.01}
   m_SizeDelta: {x: 255.97, y: 255.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337707421
@@ -531,7 +531,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Car Dealer,true
+          m_StringArgument: Tune Shop,true
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &337707422
@@ -581,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -358.8, y: -356.62}
+  m_AnchoredPosition: {x: -163.80002, y: -295}
   m_SizeDelta: {x: 304.95, y: 240.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436326480
@@ -951,6 +951,7 @@ GameObject:
   - component: {fileID: 655690461}
   - component: {fileID: 655690460}
   - component: {fileID: 655690464}
+  - component: {fileID: 655690465}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -992,7 +993,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1031,14 +1032,14 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1482357161}
-  - {fileID: 80163066}
   - {fileID: 1977932534}
   - {fileID: 1032962088}
   - {fileID: 293358306}
-  - {fileID: 1090816363}
-  - {fileID: 436326479}
-  - {fileID: 1194334645}
   - {fileID: 337707420}
+  - {fileID: 1194334645}
+  - {fileID: 436326479}
+  - {fileID: 1090816363}
+  - {fileID: 80163066}
   - {fileID: 943221940}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1162,6 +1163,18 @@ MonoBehaviour:
   m_DefaultActionMap: Menu
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &655690465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655690459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d89eac2681ac224fbe23b814f20cfc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835776116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,7 +1437,7 @@ Camera:
   m_GameObject: {fileID: 1017638969}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1441,7 +1454,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1503,11 +1516,11 @@ RectTransform:
   m_Children:
   - {fileID: 1588895035}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -307.00003, y: 160.795}
+  m_AnchoredPosition: {x: -112.00006, y: 160.795}
   m_SizeDelta: {x: 316.07, y: 307.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032962089
@@ -1565,7 +1578,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1939572958}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadSceneWithTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: License Center,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1090816362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,11 +1622,11 @@ RectTransform:
   m_Children:
   - {fileID: 1176572969}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -53, y: -202}
+  m_AnchoredPosition: {x: 141.99997, y: -163}
   m_SizeDelta: {x: 306.65, y: 306.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090816364
@@ -1657,7 +1682,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Car Dealer,true
+          m_StringArgument: My Home,true
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1090816365
@@ -1708,11 +1733,11 @@ RectTransform:
   m_Children:
   - {fileID: 1351453289}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -832.4501, y: -100.72001}
+  m_AnchoredPosition: {x: -586.78015, y: -100.72001}
   m_SizeDelta: {x: 255.1, y: 201.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194334646
@@ -1770,7 +1795,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1939572958}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadSceneWithTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GT Auto,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1351453289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e177bd659a85b644b8577a928f9d91f, type: 3}
@@ -2119,11 +2156,11 @@ RectTransform:
   m_Children:
   - {fileID: 1371959447}
   m_Father: {fileID: 655690463}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -737.67, y: 198.68}
+  m_AnchoredPosition: {x: -492, y: 198.68}
   m_SizeDelta: {x: 306.65, y: 306.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977932535
@@ -2169,19 +2206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1939572958}
-        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
-        m_MethodName: LoadSceneWithTransition
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Car Dealer,true
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1977932536
 MonoBehaviour:
   m_ObjectHideFlags: 0
