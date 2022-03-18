@@ -2,24 +2,21 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class RotationScript : MonoBehaviour, ISelectHandler
+public class RotationScript : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
-    private bool rotateObject = false;
+    private bool rotateObject;
 
     public void OnSelect(BaseEventData eventData)
     {
-        if (rotateObject == true) {
-            rotateObject = false;
-        }
-        else
-        {
-            rotateObject = true;
-        }
-
+        rotateObject = true;
+    }
+    public void OnDeselect(BaseEventData eventData)
+    {
+        rotateObject = false;
     }
 
-        void Update() {  
+    void Update() {  
             if (rotateObject == true)
                 transform.Rotate(new Vector3(0f, 100f, 0f) * Time.deltaTime);
         }
-    }
+}
