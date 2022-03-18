@@ -1,9 +1,25 @@
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class RotationScript : MonoBehaviour
+public class RotationScript : MonoBehaviour, ISelectHandler
 {
-    void Update()
+    private bool rotateObject = false;
+
+    public void OnSelect(BaseEventData eventData)
     {
-        transform.Rotate(new Vector3(0f, 100f, 0f) * Time.deltaTime);
+        if (rotateObject == true) {
+            rotateObject = false;
+        }
+        else
+        {
+            rotateObject = true;
+        }
+
     }
-}
+
+        void Update() {  
+            if (rotateObject == true)
+                transform.Rotate(new Vector3(0f, 100f, 0f) * Time.deltaTime);
+        }
+    }

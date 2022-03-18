@@ -38,7 +38,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Go Back"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""784ccbc7-8d94-4339-94da-830594d99439"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
