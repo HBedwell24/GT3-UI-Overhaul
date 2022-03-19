@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CursorBehavior : MonoBehaviour
+public class VerticalCursorBehavior : MonoBehaviour
 {
     [SerializeField] RectTransform[] charBtn;
     [SerializeField] RectTransform indicator;
@@ -17,7 +17,7 @@ public class CursorBehavior : MonoBehaviour
         {
             moveTimer += Time.deltaTime;
         }
-        if (Gamepad.current.dpad.right.IsPressed() || Gamepad.current.leftStick.right.IsPressed())
+        if (Gamepad.current.dpad.down.IsPressed() || Gamepad.current.leftStick.down.IsPressed())
         {
             if (moveTimer >= moveDelay)
             {
@@ -29,7 +29,7 @@ public class CursorBehavior : MonoBehaviour
                 moveTimer = 0;
             }
         }
-        else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
+        else if (Gamepad.current.dpad.up.IsPressed() || Gamepad.current.leftStick.up.IsPressed())
         {
             if (moveTimer >= moveDelay)
             {

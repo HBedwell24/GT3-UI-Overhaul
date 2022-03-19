@@ -108,6 +108,28 @@ public class CarConfigScript : MonoBehaviour
         racePrompt.blocksRaycasts = true;
     }
 
+    public void Cancel()
+    {
+        counter--;
+        AudioManager.instance.PlaySoundEffect("Submenu Exit");
+
+        racePrompt.alpha = 0;
+        racePrompt.interactable = false;
+        racePrompt.blocksRaycasts = false;
+
+        panel.alpha = 0;
+
+        controls.alpha = 1;
+        controls.interactable = true;
+        controls.blocksRaycasts = true;
+
+        carInformation.alpha = 1;
+
+        raceDifficultySelection.alpha = 1;
+        raceDifficultySelection.interactable = true;
+        raceDifficultySelection.blocksRaycasts = true;
+    }
+
     public void PromptExit(InputAction.CallbackContext context)
     {
         if (context.performed)

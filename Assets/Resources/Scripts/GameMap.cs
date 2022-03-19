@@ -36,7 +36,14 @@ public class GameMap : MonoBehaviour
 
     private void LateUpdate()
     {
-        cam.position = Vector2.Lerp(cam.position, levels[currentIndex].position, speed);
+        if (moveTimer < moveDelay)
+        {
+            moveTimer += Time.deltaTime;
+        }
+        if (moveTimer >= moveDelay)
+        {
+            cam.position = Vector2.Lerp(cam.position, levels[currentIndex].position, speed);
+        }
     }
 
     // Update is called once per frame
