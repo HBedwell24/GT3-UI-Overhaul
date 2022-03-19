@@ -344,6 +344,8 @@ GameObject:
   - component: {fileID: 324834629}
   - component: {fileID: 324834628}
   - component: {fileID: 324834627}
+  - component: {fileID: 324834630}
+  - component: {fileID: 324834631}
   m_Layer: 5
   m_Name: Rally Events
   m_TagString: Untagged
@@ -452,6 +454,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324834625}
   m_CullTransparentMesh: 1
+--- !u!114 &324834630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324834625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &324834631
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324834625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6126f614db0b48445bc45cab46aee708, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &390596144
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +497,8 @@ GameObject:
   - component: {fileID: 390596148}
   - component: {fileID: 390596147}
   - component: {fileID: 390596146}
+  - component: {fileID: 390596149}
+  - component: {fileID: 390596150}
   m_Layer: 5
   m_Name: Beginner League
   m_TagString: Untagged
@@ -487,7 +522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -331.0901, y: 187.58}
+  m_AnchoredPosition: {x: -120, y: 187.58}
   m_SizeDelta: {x: 1325.5698, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390596146
@@ -584,6 +619,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390596144}
   m_CullTransparentMesh: 1
+--- !u!95 &390596149
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390596144}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 161ca5656fd574b4fa52f0c2eea48b15, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &390596150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390596144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &513168537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -822,6 +888,8 @@ GameObject:
   - component: {fileID: 754765939}
   - component: {fileID: 754765938}
   - component: {fileID: 754765937}
+  - component: {fileID: 754765940}
+  - component: {fileID: 754765941}
   m_Layer: 5
   m_Name: Endurance Events
   m_TagString: Untagged
@@ -930,6 +998,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754765935}
   m_CullTransparentMesh: 1
+--- !u!114 &754765940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754765935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &754765941
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754765935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7a5aec5f8cb73864e899f885d26bd0cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &765983114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1659,8 @@ GameObject:
   - component: {fileID: 1210672047}
   - component: {fileID: 1210672046}
   - component: {fileID: 1210672045}
+  - component: {fileID: 1210672048}
+  - component: {fileID: 1210672049}
   m_Layer: 5
   m_Name: Professional League
   m_TagString: Untagged
@@ -1668,6 +1769,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210672043}
   m_CullTransparentMesh: 1
+--- !u!114 &1210672048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210672043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1210672049
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210672043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 186b115fc3ee33b49b376d8e25885395, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1519706826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2106,8 @@ GameObject:
   - component: {fileID: 1931830444}
   - component: {fileID: 1931830443}
   - component: {fileID: 1931830442}
+  - component: {fileID: 1931830446}
+  - component: {fileID: 1931830445}
   m_Layer: 5
   m_Name: Amateur League
   m_TagString: Untagged
@@ -2082,3 +2216,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931830440}
   m_CullTransparentMesh: 1
+--- !u!95 &1931830445
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931830440}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e1c709f86f81284587e563fe7354fde, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1931830446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931830440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
