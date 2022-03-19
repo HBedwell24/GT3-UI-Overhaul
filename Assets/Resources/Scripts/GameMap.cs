@@ -10,12 +10,13 @@ public class GameMap : MonoBehaviour
 
     [SerializeField]
     float speed = .5f;
-    Camera camera;
+
+    Transform cam;
     int currentIndex = 0;
 
     void Start()
     {
-        camera = Camera.main;
+        cam = Camera.main.transform.parent;
     }
 
     void Move(int dir)
@@ -24,20 +25,28 @@ public class GameMap : MonoBehaviour
         currentIndex = (currentIndex < 0) ? levels.Length - 1 : currentIndex;
         currentIndex = (currentIndex >= levels.Length) ? 0 : currentIndex;
 
-        camera.transform.position = Vector2.Lerp(camera.transform.position, levels[currentIndex].position, speed);
+        
+    }
+
+    private void LateUpdate()
+    {
+        cam.position = Vector2.Lerp(cam.position, levels[currentIndex].position, speed);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (Gamepad.current.dpad.right.IsPressed() || Gamepad.current.leftStick.right.IsPressed())
+        if (Input.GetJoystickNames().Length > 0)
         {
-            Move(1);
+            if (Gamepad.current.dpad.right.IsPressed() || Gamepad.current.leftStick.right.IsPressed())
+            {
+                Move(1);
+            }
+            else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
+            {
+                Move(-1);
+            }
         }
-        else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
-        {
-            Move(-1);
-        }
+            
     }
 }

@@ -8,6 +8,7 @@ public class RotationScript : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
+        AudioManager.instance.PlaySoundEffect("Cursor");
         rotateObject = true;
     }
     public void OnDeselect(BaseEventData eventData)
