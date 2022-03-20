@@ -14,38 +14,6 @@ public class GameMap : MonoBehaviour
     int indicatorPos;
     float moveTimer;
 
-    [SerializeField]
-    float speed;
-
-    Transform cam;
-    int currentIndex = 0;
-
-    void Start()
-    {
-        cam = Camera.main.transform.parent;
-    }
-
-    void Move(int dir)
-    {
-        currentIndex += dir;
-        currentIndex = (currentIndex < 0) ? levels.Length - 1 : currentIndex;
-        currentIndex = (currentIndex >= levels.Length) ? 0 : currentIndex;
-
-        
-    }
-
-    private void LateUpdate()
-    {
-        if (moveTimer < moveDelay)
-        {
-            moveTimer += Time.deltaTime;
-        }
-        if (moveTimer >= moveDelay)
-        {
-            cam.position = Vector2.Lerp(cam.position, levels[currentIndex].position, speed);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -71,7 +39,6 @@ public class GameMap : MonoBehaviour
                     }
                     moveTimer = 0;
                 }
-                Move(1);
             }
             else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
             {
@@ -89,7 +56,6 @@ public class GameMap : MonoBehaviour
                     }
                     moveTimer = 0;
                 }
-                Move(-1);
             }
             indicator.localPosition = Vector3.Lerp(indicator.localPosition, levels[indicatorPos].localPosition, 0.2f);
         }

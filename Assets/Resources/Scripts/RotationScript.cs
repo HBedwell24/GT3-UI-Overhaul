@@ -12,11 +12,16 @@ public class RotationScript : MonoBehaviour, ISelectHandler, IDeselectHandler
     }
     public void OnDeselect(BaseEventData eventData)
     {
+        
         rotateObject = false;
+        
     }
 
-    void Update() {  
-            if (rotateObject == true)
-                transform.Rotate(new Vector3(0f, 100f, 0f) * Time.deltaTime);
-        }
+    void Update()
+    {
+        if (rotateObject == true)
+            transform.Rotate(new Vector3(0f, 100f, 0f) * Time.deltaTime);
+        else
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 0), 300F * Time.deltaTime);
+    }
 }
