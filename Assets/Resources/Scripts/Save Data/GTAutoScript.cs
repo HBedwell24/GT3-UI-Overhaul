@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -37,8 +38,19 @@ public class GTAutoScript : MonoBehaviour
 
     private string currentScreen;
 
+    GameObject menuGroupGO;
+    GameObject wheelGroup;
+    GameObject brandGroup;
+
     public void Start()
     {
+        menuGroupGO = GameObject.Find("Menu Group");
+        wheelGroup = GameObject.Find("Wheel Group");
+        brandGroup = GameObject.Find("Brand Group");
+
+        wheelGroup.GetComponent<CursorBehavior>().enabled = false;
+        brandGroup.GetComponent<CursorBehavior>().enabled = false;
+
         currentScreen = "menuGroup";
 
         carWashTitle.alpha = 0;
@@ -72,6 +84,8 @@ public class GTAutoScript : MonoBehaviour
 
     public void CarWashClicked()
     {
+        menuGroupGO.GetComponent<CursorBehavior>().enabled = false;
+
         currentScreen = "carWash";
 
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -90,6 +104,8 @@ public class GTAutoScript : MonoBehaviour
 
     public void OilChangeClicked()
     {
+        menuGroupGO.GetComponent<CursorBehavior>().enabled = false;
+
         currentScreen = "oilChange";
 
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -108,6 +124,9 @@ public class GTAutoScript : MonoBehaviour
 
     public void WheelShopClicked()
     {
+        menuGroupGO.GetComponent<CursorBehavior>().enabled = false;
+        brandGroup.GetComponent<CursorBehavior>().enabled = true;
+
         currentScreen = "brandSelection";
 
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -126,6 +145,9 @@ public class GTAutoScript : MonoBehaviour
 
     public void BrandClicked()
     {
+        brandGroup.GetComponent<CursorBehavior>().enabled = false;
+        wheelGroup.GetComponent<CursorBehavior>().enabled = true;
+
         currentScreen = "wheelSelection";
 
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -145,7 +167,10 @@ public class GTAutoScript : MonoBehaviour
         {
             switch (currentScreen)
             {
+                
                 case "carWash":
+                    menuGroupGO.GetComponent<CursorBehavior>().enabled = true;
+
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     carWashTitle.alpha = 0;
@@ -163,6 +188,8 @@ public class GTAutoScript : MonoBehaviour
                     break;
 
                 case "oilChange":
+                    menuGroupGO.GetComponent<CursorBehavior>().enabled = true;
+
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     oilChangeTitle.alpha = 0;
@@ -180,6 +207,9 @@ public class GTAutoScript : MonoBehaviour
                     break;
 
                 case "brandSelection":
+                    brandGroup.GetComponent<CursorBehavior>().enabled = false;
+                    menuGroupGO.GetComponent<CursorBehavior>().enabled = true;
+
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     wheelShopTitle.alpha = 0;
@@ -197,6 +227,9 @@ public class GTAutoScript : MonoBehaviour
                     break;
 
                 case "wheelSelection":
+                    brandGroup.GetComponent<CursorBehavior>().enabled = true;
+                    wheelGroup.GetComponent<CursorBehavior>().enabled = false;
+
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     wheelSelectionMenu.alpha = 0;
