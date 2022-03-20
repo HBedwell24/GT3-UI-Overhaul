@@ -28,8 +28,24 @@ public class CarConfigScript : MonoBehaviour
 
     private int counter = 1;
 
+   
+    GameObject colorSelectionGO;
+    GameObject transmissionGO;
+    GameObject raceDifficultyGO;
+    GameObject racePromptGO;
+
+
     public void Start()
     {
+        colorSelectionGO = GameObject.Find("Color Selection Prompt");
+        transmissionGO = GameObject.Find("Transmission Prompt");
+        raceDifficultyGO = GameObject.Find("Race Difficulty Selection");
+        racePromptGO = GameObject.Find("Race Prompt");
+
+        transmissionGO.GetComponent<CursorBehavior>().enabled = false;
+        raceDifficultyGO.GetComponent<CursorBehavior>().enabled = false;
+        racePromptGO.GetComponent<CursorBehavior>().enabled = false;
+
         colorSelectionPrompt.alpha = 1;
         colorSelectionPrompt.interactable = true;
         colorSelectionPrompt.blocksRaycasts = true;
@@ -57,6 +73,9 @@ public class CarConfigScript : MonoBehaviour
 
     public void SelectColor()
     {
+        colorSelectionGO.GetComponent<CursorBehavior>().enabled = false;
+        transmissionGO.GetComponent<CursorBehavior>().enabled = true;
+
         // increment to 2
         counter++;
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -72,6 +91,9 @@ public class CarConfigScript : MonoBehaviour
 
     public void SelectTransmissionType()
     {
+        transmissionGO.GetComponent<CursorBehavior>().enabled = false;
+        raceDifficultyGO.GetComponent<CursorBehavior>().enabled = true;
+
         // increment to 3
         counter++;
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -87,6 +109,9 @@ public class CarConfigScript : MonoBehaviour
 
     public void SelectRaceDifficulty()
     {
+        raceDifficultyGO.GetComponent<CursorBehavior>().enabled = false;
+        racePrompt.GetComponent<CursorBehavior>().enabled = true;
+
         // increment to 4
         counter++;
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
@@ -110,6 +135,9 @@ public class CarConfigScript : MonoBehaviour
 
     public void Cancel()
     {
+        raceDifficultyGO.GetComponent<CursorBehavior>().enabled = true;
+        racePrompt.GetComponent<CursorBehavior>().enabled = false;
+
         counter--;
         AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
@@ -137,6 +165,9 @@ public class CarConfigScript : MonoBehaviour
             switch (counter)
             {
                 case 2:
+                    colorSelectionGO.GetComponent<CursorBehavior>().enabled = true;
+                    transmissionGO.GetComponent<CursorBehavior>().enabled = false;
+
                     counter--;
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
@@ -150,6 +181,9 @@ public class CarConfigScript : MonoBehaviour
                     break;
 
                 case 3:
+                    transmissionGO.GetComponent<CursorBehavior>().enabled = true;
+                    raceDifficultyGO.GetComponent<CursorBehavior>().enabled = false;
+
                     counter--;
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
@@ -164,6 +198,9 @@ public class CarConfigScript : MonoBehaviour
                     break;
 
                 case 4:
+                    raceDifficultyGO.GetComponent<CursorBehavior>().enabled = true;
+                    racePrompt.GetComponent<CursorBehavior>().enabled = false;
+
                     counter--;
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
