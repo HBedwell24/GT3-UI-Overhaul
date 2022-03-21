@@ -11,7 +11,7 @@ public class IdleDetector : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(idleCounter);
+        //Debug.Log(idleCounter);
         if (Input.anyKey || Gamepad.current.allControls.Any(x => x is ButtonControl button && x.IsPressed() && !x.synthetic))
         {
             idleCounter = 0.0f;

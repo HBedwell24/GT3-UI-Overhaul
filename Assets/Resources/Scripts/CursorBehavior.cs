@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +14,7 @@ public class CursorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (moveTimer < moveDelay)
         {
             moveTimer += Time.deltaTime;
