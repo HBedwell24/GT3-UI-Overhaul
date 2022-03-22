@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class CarConfigScript : MonoBehaviour
@@ -27,7 +28,9 @@ public class CarConfigScript : MonoBehaviour
     public CanvasGroup controls;
 
     private int counter = 1;
-
+    private string color;
+    private string transmission;
+    private string difficulty;
    
     GameObject colorSelectionGO;
     GameObject transmissionGO;
@@ -72,6 +75,8 @@ public class CarConfigScript : MonoBehaviour
 
     public void SelectColor()
     {
+        color = EventSystem.current.currentSelectedGameObject.name;
+
         colorSelectionGO.GetComponent<CursorBehavior>().enabled = false;
         transmissionGO.GetComponent<CursorBehavior>().enabled = true;
 
@@ -86,10 +91,21 @@ public class CarConfigScript : MonoBehaviour
         transmissionPrompt.alpha = 1;
         transmissionPrompt.interactable = true;
         transmissionPrompt.blocksRaycasts = true;
+
+        if (transmission != null)
+        {
+            EventSystem.current.SetSelectedGameObject(GameObject.Find(transmission));
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(GameObject.Find("Automatic"));
+        }
     }
 
     public void SelectTransmissionType()
     {
+        transmission = EventSystem.current.currentSelectedGameObject.name;
+
         transmissionGO.GetComponent<CursorBehavior>().enabled = false;
         raceDifficultyGO.GetComponent<CursorBehavior>().enabled = true;
 
@@ -104,10 +120,21 @@ public class CarConfigScript : MonoBehaviour
         raceDifficultySelection.alpha = 1;
         raceDifficultySelection.interactable = true;
         raceDifficultySelection.blocksRaycasts = true;
+
+        if (difficulty != null)
+        {
+            EventSystem.current.SetSelectedGameObject(GameObject.Find(difficulty));
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(GameObject.Find("Beginner"));
+        }
     }
 
     public void SelectRaceDifficulty()
     {
+        difficulty = EventSystem.current.currentSelectedGameObject.name;
+
         raceDifficultyGO.GetComponent<CursorBehavior>().enabled = false;
         racePrompt.GetComponent<CursorBehavior>().enabled = true;
 
@@ -130,6 +157,8 @@ public class CarConfigScript : MonoBehaviour
         racePrompt.alpha = 1;
         racePrompt.interactable = true;
         racePrompt.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("Cancel"));
     }
 
     public void Cancel()
@@ -155,6 +184,8 @@ public class CarConfigScript : MonoBehaviour
         raceDifficultySelection.alpha = 1;
         raceDifficultySelection.interactable = true;
         raceDifficultySelection.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find(difficulty));
     }
 
     public void PromptExit(InputAction.CallbackContext context)
@@ -177,6 +208,8 @@ public class CarConfigScript : MonoBehaviour
                     colorSelectionPrompt.alpha = 1;
                     colorSelectionPrompt.interactable = true;
                     colorSelectionPrompt.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find(color));
                     break;
 
                 case 3:
@@ -193,6 +226,8 @@ public class CarConfigScript : MonoBehaviour
                     transmissionPrompt.alpha = 1;
                     transmissionPrompt.interactable = true;
                     transmissionPrompt.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find(transmission));
 
                     break;
 
@@ -218,6 +253,8 @@ public class CarConfigScript : MonoBehaviour
                     raceDifficultySelection.alpha = 1;
                     raceDifficultySelection.interactable = true;
                     raceDifficultySelection.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find(difficulty));
 
                     break;
 

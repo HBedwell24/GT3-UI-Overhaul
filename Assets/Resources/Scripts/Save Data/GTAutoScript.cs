@@ -41,7 +41,7 @@ public class GTAutoScript : MonoBehaviour
     public CanvasGroup staticCursor;
 
     private string currentScreen;
-    private string name;
+    private string gameObjectName;
 
     GameObject menuGroupGO;
     GameObject wheelGroup;
@@ -159,7 +159,7 @@ public class GTAutoScript : MonoBehaviour
 
     public void BrandClicked()
     {
-        name = EventSystem.current.currentSelectedGameObject.name;
+        gameObjectName = EventSystem.current.currentSelectedGameObject.name;
         brandGroup.GetComponent<CursorBehavior>().enabled = false;
         wheelGroup.GetComponent<CursorBehavior>().enabled = true;
 
@@ -265,7 +265,7 @@ public class GTAutoScript : MonoBehaviour
                     brandSelectionMenu.interactable = true;
                     brandSelectionMenu.blocksRaycasts = true;
 
-                    EventSystem.current.SetSelectedGameObject(GameObject.Find(name));
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find(gameObjectName));
                     currentScreen = "brandSelection";
                     break;
 
