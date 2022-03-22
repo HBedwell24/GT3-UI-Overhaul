@@ -1424,6 +1424,7 @@ GameObject:
   - component: {fileID: 1091248503}
   - component: {fileID: 1091248502}
   - component: {fileID: 1091248505}
+  - component: {fileID: 1091248506}
   m_Layer: 5
   m_Name: Enter
   m_TagString: Untagged
@@ -1551,6 +1552,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1091248506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091248500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110027309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379141243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b877db709bcdfc4c9de01191f92755e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a206cc9af4e8f448867e971eae1a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBtn:
@@ -2655,6 +2668,7 @@ GameObject:
   - component: {fileID: 1595069932}
   - component: {fileID: 1595069931}
   - component: {fileID: 1595069934}
+  - component: {fileID: 1595069935}
   m_Layer: 5
   m_Name: Gallery View
   m_TagString: Untagged
@@ -2782,6 +2796,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1595069935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595069929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1613072767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3191,7 @@ GameObject:
   - component: {fileID: 1993606111}
   - component: {fileID: 1993606110}
   - component: {fileID: 1993606113}
+  - component: {fileID: 1993606114}
   m_Layer: 5
   m_Name: Select Color
   m_TagString: Untagged
@@ -3292,6 +3319,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1993606114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993606108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106174332
 GameObject:
   m_ObjectHideFlags: 0

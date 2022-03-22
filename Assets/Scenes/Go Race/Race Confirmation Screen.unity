@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238480807}
-  - component: {fileID: 238480808}
+  - component: {fileID: 238480809}
   m_Layer: 5
   m_Name: Button Group
   m_TagString: Untagged
@@ -456,7 +456,7 @@ RectTransform:
   m_AnchoredPosition: {x: 2.3500977, y: -116.15}
   m_SizeDelta: {x: 715.7, y: 174.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &238480808
+--- !u!114 &238480809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 238480806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b877db709bcdfc4c9de01191f92755e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a206cc9af4e8f448867e971eae1a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBtn:

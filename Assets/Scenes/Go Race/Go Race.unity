@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 324834627}
   - component: {fileID: 324834630}
   - component: {fileID: 324834631}
+  - component: {fileID: 324834632}
   m_Layer: 5
   m_Name: Rally Events
   m_TagString: Untagged
@@ -485,6 +486,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &324834632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324834625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &390596144
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +512,7 @@ GameObject:
   - component: {fileID: 390596146}
   - component: {fileID: 390596149}
   - component: {fileID: 390596150}
+  - component: {fileID: 390596151}
   m_Layer: 5
   m_Name: Beginner League
   m_TagString: Untagged
@@ -648,6 +662,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &390596151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390596144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &513168537
@@ -890,6 +916,7 @@ GameObject:
   - component: {fileID: 754765937}
   - component: {fileID: 754765940}
   - component: {fileID: 754765941}
+  - component: {fileID: 754765942}
   m_Layer: 5
   m_Name: Endurance Events
   m_TagString: Untagged
@@ -1029,6 +1056,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &754765942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754765935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &765983114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1406,7 +1445,6 @@ RectTransform:
   - {fileID: 1519706827}
   - {fileID: 650603941}
   - {fileID: 2063114522}
-  - {fileID: 2022720917}
   - {fileID: 869641906}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1674,6 +1712,7 @@ GameObject:
   - component: {fileID: 1210672045}
   - component: {fileID: 1210672048}
   - component: {fileID: 1210672049}
+  - component: {fileID: 1210672050}
   m_Layer: 5
   m_Name: Professional League
   m_TagString: Untagged
@@ -1813,6 +1852,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1210672050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210672043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1304749439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2247,7 @@ GameObject:
   - component: {fileID: 1931830442}
   - component: {fileID: 1931830446}
   - component: {fileID: 1931830445}
+  - component: {fileID: 1931830447}
   m_Layer: 5
   m_Name: Amateur League
   m_TagString: Untagged
@@ -2335,6 +2387,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f239ddbd468734bbb2997f0d1dabaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1931830447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931830440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2022720916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,12 +2427,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1304749440}
-  m_Father: {fileID: 1091864139}
-  m_RootOrder: 6
+  m_Father: {fileID: 2063114522}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 568.61, y: 190.29}
+  m_AnchoredPosition: {x: 568.6101, y: 190.29005}
   m_SizeDelta: {x: 782.78, y: 115.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2063114521
@@ -2404,6 +2468,7 @@ RectTransform:
   - {fileID: 1210672044}
   - {fileID: 324834626}
   - {fileID: 754765936}
+  - {fileID: 2022720917}
   m_Father: {fileID: 1091864139}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2421,7 +2486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063114521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b877db709bcdfc4c9de01191f92755e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a206cc9af4e8f448867e971eae1a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBtn:

@@ -3345,12 +3345,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784159824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b877db709bcdfc4c9de01191f92755e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a206cc9af4e8f448867e971eae1a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBtn:
-  - {fileID: 1487976708}
   - {fileID: 552164088}
+  - {fileID: 1487976708}
   indicator: {fileID: 108637259}
   moveDelay: 0.2
 --- !u!1001 &1802540061

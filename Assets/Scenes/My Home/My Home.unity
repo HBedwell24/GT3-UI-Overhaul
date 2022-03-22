@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 518092843}
   - component: {fileID: 518092842}
   - component: {fileID: 518092845}
+  - component: {fileID: 518092846}
   m_Layer: 5
   m_Name: Legal Credits
   m_TagString: Untagged
@@ -929,6 +930,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &518092846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518092840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529276515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,6 +2551,7 @@ GameObject:
   - component: {fileID: 1297646065}
   - component: {fileID: 1297646064}
   - component: {fileID: 1297646067}
+  - component: {fileID: 1297646068}
   m_Layer: 5
   m_Name: Free Run
   m_TagString: Untagged
@@ -2665,6 +2679,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1297646068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297646062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300703099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3493,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889616720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b877db709bcdfc4c9de01191f92755e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a206cc9af4e8f448867e971eae1a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBtn:
@@ -3489,6 +3515,7 @@ GameObject:
   - component: {fileID: 2068992410}
   - component: {fileID: 2068992409}
   - component: {fileID: 2068992412}
+  - component: {fileID: 2068992413}
   m_Layer: 5
   m_Name: Car List
   m_TagString: Untagged
@@ -3628,3 +3655,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2068992413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068992407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
