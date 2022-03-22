@@ -18,9 +18,9 @@ public class GameMap : MonoBehaviour
     public int checkLevels(string param)
     {
         int i = 0;
-        foreach (RectTransform go in levels)
+        foreach (RectTransform btn in levels)
         {
-            if (go.name == param)
+            if (btn.name == param)
             {
                 return i;
             }
@@ -45,7 +45,6 @@ public class GameMap : MonoBehaviour
             {
                 if (moveTimer >= moveDelay)
                 {
-                    AudioManager.instance.PlaySoundEffect("Cursor");
                     moveTimer = 0;
                 }
             }

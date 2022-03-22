@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,9 +11,8 @@ public class RotationScript : MonoBehaviour, ISelectHandler, IDeselectHandler
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        
+        AudioManager.instance.PlaySoundEffect("Cursor");
         rotateObject = false;
-        
     }
 
     void Update()

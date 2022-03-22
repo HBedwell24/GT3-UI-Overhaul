@@ -34,7 +34,6 @@ public class CarConfigScript : MonoBehaviour
     GameObject raceDifficultyGO;
     GameObject racePromptGO;
 
-
     public void Start()
     {
         colorSelectionGO = GameObject.Find("Color Selection Prompt");

@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 139249963}
   - component: {fileID: 139249962}
   - component: {fileID: 139249965}
+  - component: {fileID: 139249966}
   m_Layer: 5
   m_Name: 350Z
   m_TagString: Untagged
@@ -383,6 +384,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &139249966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139249960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &184105783
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +409,7 @@ GameObject:
   - component: {fileID: 184105786}
   - component: {fileID: 184105785}
   - component: {fileID: 184105788}
+  - component: {fileID: 184105789}
   m_Layer: 5
   m_Name: 240SX SE
   m_TagString: Untagged
@@ -535,6 +549,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &184105789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184105783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &242771398
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +574,7 @@ GameObject:
   - component: {fileID: 242771401}
   - component: {fileID: 242771400}
   - component: {fileID: 242771403}
+  - component: {fileID: 242771404}
   m_Layer: 5
   m_Name: Fairlady Z '69
   m_TagString: Untagged
@@ -687,6 +714,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &242771404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242771398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &272576065
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +803,7 @@ GameObject:
   - component: {fileID: 425201820}
   - component: {fileID: 425201819}
   - component: {fileID: 425201822}
+  - component: {fileID: 425201823}
   m_Layer: 5
   m_Name: Fairlady Z '94
   m_TagString: Untagged
@@ -903,6 +943,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &425201823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425201817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438232240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1387,7 @@ GameObject:
   - component: {fileID: 1047515451}
   - component: {fileID: 1047515450}
   - component: {fileID: 1047515453}
+  - component: {fileID: 1047515454}
   m_Layer: 5
   m_Name: Silvia S14 Kouki
   m_TagString: Untagged
@@ -1474,6 +1527,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1047515454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047515448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1088370191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,6 +2045,7 @@ GameObject:
   - component: {fileID: 1442753183}
   - component: {fileID: 1442753182}
   - component: {fileID: 1442753185}
+  - component: {fileID: 1442753186}
   m_Layer: 5
   m_Name: Silvia S14 Zenki
   m_TagString: Untagged
@@ -2119,6 +2185,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1442753186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442753180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452918220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,6 +2210,7 @@ GameObject:
   - component: {fileID: 1452918223}
   - component: {fileID: 1452918222}
   - component: {fileID: 1452918225}
+  - component: {fileID: 1452918226}
   m_Layer: 5
   m_Name: Skyline R32
   m_TagString: Untagged
@@ -2271,6 +2350,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1452918226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452918220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1480449765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,6 +2620,7 @@ GameObject:
   - component: {fileID: 1587102973}
   - component: {fileID: 1587102972}
   - component: {fileID: 1587102975}
+  - component: {fileID: 1587102976}
   m_Layer: 5
   m_Name: Skyline R34
   m_TagString: Untagged
@@ -2668,6 +2760,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1587102976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587102970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1717405407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2813,6 +2917,7 @@ GameObject:
   - component: {fileID: 1856333059}
   - component: {fileID: 1856333058}
   - component: {fileID: 1856333061}
+  - component: {fileID: 1856333062}
   m_Layer: 5
   m_Name: Silvia S13
   m_TagString: Untagged
@@ -2952,6 +3057,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1856333062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856333056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1873919182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,6 +3387,7 @@ GameObject:
   - component: {fileID: 2035110142}
   - component: {fileID: 2035110141}
   - component: {fileID: 2035110144}
+  - component: {fileID: 2035110145}
   m_Layer: 5
   m_Name: Skyline 2000GTR
   m_TagString: Untagged
@@ -3409,3 +3527,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2035110145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035110139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

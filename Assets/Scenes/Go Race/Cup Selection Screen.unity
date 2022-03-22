@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 51423828}
   - component: {fileID: 51423827}
   - component: {fileID: 51423830}
+  - component: {fileID: 51423831}
   m_Layer: 5
   m_Name: FF Challenge
   m_TagString: Untagged
@@ -395,6 +396,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &51423831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51423825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &101792039
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +421,7 @@ GameObject:
   - component: {fileID: 101792042}
   - component: {fileID: 101792041}
   - component: {fileID: 101792044}
+  - component: {fileID: 101792045}
   m_Layer: 5
   m_Name: Race of NA Sports
   m_TagString: Untagged
@@ -535,6 +549,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &101792045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101792039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177409523
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +685,7 @@ GameObject:
   - component: {fileID: 279153682}
   - component: {fileID: 279153681}
   - component: {fileID: 279153684}
+  - component: {fileID: 279153685}
   m_Layer: 5
   m_Name: Spider & Roadster
   m_TagString: Untagged
@@ -786,6 +813,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &279153685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279153679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &320263969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1310,7 @@ GameObject:
   - component: {fileID: 772321318}
   - component: {fileID: 772321317}
   - component: {fileID: 772321320}
+  - component: {fileID: 772321321}
   m_Layer: 5
   m_Name: Lightweight Sports Car Cup
   m_TagString: Untagged
@@ -1398,6 +1438,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &772321321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772321315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &871929467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1667,6 +1719,7 @@ GameObject:
   - component: {fileID: 894732252}
   - component: {fileID: 894732251}
   - component: {fileID: 894732254}
+  - component: {fileID: 894732255}
   m_Layer: 5
   m_Name: Sunday Cup
   m_TagString: Untagged
@@ -1806,6 +1859,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &894732255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894732249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971181350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1959,7 @@ GameObject:
   - component: {fileID: 1033741233}
   - component: {fileID: 1033741232}
   - component: {fileID: 1033741235}
+  - component: {fileID: 1033741236}
   m_Layer: 5
   m_Name: 4WD Challenge
   m_TagString: Untagged
@@ -2021,6 +2087,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1033741236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033741230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1059820442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2205,7 @@ GameObject:
   - component: {fileID: 1211783665}
   - component: {fileID: 1211783664}
   - component: {fileID: 1211783667}
+  - component: {fileID: 1211783668}
   m_Layer: 5
   m_Name: MR Challenge
   m_TagString: Untagged
@@ -2254,6 +2333,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1211783668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211783662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221545130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +2661,7 @@ GameObject:
   - component: {fileID: 1361089643}
   - component: {fileID: 1361089642}
   - component: {fileID: 1361089645}
+  - component: {fileID: 1361089646}
   m_Layer: 5
   m_Name: Clubman Cup
   m_TagString: Untagged
@@ -2697,6 +2789,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1361089646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361089640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1448845174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3241,7 @@ GameObject:
   - component: {fileID: 2041044642}
   - component: {fileID: 2041044641}
   - component: {fileID: 2041044644}
+  - component: {fileID: 2041044645}
   m_Layer: 5
   m_Name: FR Challenge
   m_TagString: Untagged
@@ -3264,3 +3369,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2041044645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041044639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

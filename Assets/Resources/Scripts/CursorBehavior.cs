@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class CursorBehavior : MonoBehaviour
@@ -8,41 +9,42 @@ public class CursorBehavior : MonoBehaviour
     [SerializeField] RectTransform indicator;
     [SerializeField] float moveDelay;
 
-    int indicatorPos;
     float moveTimer;
+
+    public int checkCharBtns(string param)
+    {
+        int i = 0;
+        foreach (RectTransform btn in charBtn)
+        {
+            if (btn.name == param)
+            {
+                return i;
+            }
+            i++;
+        }
+        return 0;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        GameObject current = EventSystem.current.currentSelectedGameObject;
+        int pos = checkCharBtns(current.name);
+
         if (moveTimer < moveDelay)
         {
             moveTimer += Time.deltaTime;
         }
-        if (Gamepad.current.dpad.right.IsPressed() || Gamepad.current.leftStick.right.IsPressed())
+        if (Input.GetJoystickNames().Length > 0)
         {
-            if (moveTimer >= moveDelay)
+            if (Gamepad.current.dpad.IsPressed() || Gamepad.current.leftStick.IsPressed())
             {
-                if (indicatorPos < charBtn.Length - 1)
+                if (moveTimer >= moveDelay)
                 {
-                    AudioManager.instance.PlaySoundEffect("Cursor");
-                    indicatorPos++;
+                    moveTimer = 0;
                 }
-                moveTimer = 0;
             }
+            indicator.localPosition = Vector3.Lerp(indicator.localPosition, charBtn[pos].localPosition, 0.2f);
         }
-        else if (Gamepad.current.dpad.left.IsPressed() || Gamepad.current.leftStick.left.IsPressed())
-        {
-            if (moveTimer >= moveDelay)
-            {
-                if (indicatorPos > 0)
-                {
-                    AudioManager.instance.PlaySoundEffect("Cursor");
-                    indicatorPos--;
-                }
-                moveTimer = 0;
-            }
-        }
-        indicator.localPosition = Vector3.Lerp(indicator.localPosition, charBtn[indicatorPos].localPosition, 0.2f);
     }
 }

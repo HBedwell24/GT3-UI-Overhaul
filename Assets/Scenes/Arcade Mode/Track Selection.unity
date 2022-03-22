@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 168781331}
   - component: {fileID: 168781330}
   - component: {fileID: 168781333}
+  - component: {fileID: 168781334}
   m_Layer: 5
   m_Name: Trial Mountain
   m_TagString: Untagged
@@ -539,6 +540,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &168781334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168781328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &334733974
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +640,7 @@ GameObject:
   - component: {fileID: 336854560}
   - component: {fileID: 336854559}
   - component: {fileID: 336854562}
+  - component: {fileID: 336854563}
   m_Layer: 5
   m_Name: Grand Valley
   m_TagString: Untagged
@@ -754,6 +768,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &336854563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336854557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &398796002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1049,6 +1075,7 @@ GameObject:
   - component: {fileID: 840806637}
   - component: {fileID: 840806636}
   - component: {fileID: 840806639}
+  - component: {fileID: 840806640}
   m_Layer: 5
   m_Name: Seattle
   m_TagString: Untagged
@@ -1176,6 +1203,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &840806640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840806634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880095744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1396,7 @@ GameObject:
   - component: {fileID: 1050588545}
   - component: {fileID: 1050588544}
   - component: {fileID: 1050588547}
+  - component: {fileID: 1050588548}
   m_Layer: 5
   m_Name: Mid-Field
   m_TagString: Untagged
@@ -1484,6 +1524,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1050588548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050588542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1085665888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2059,7 @@ GameObject:
   - component: {fileID: 1444876760}
   - component: {fileID: 1444876759}
   - component: {fileID: 1444876762}
+  - component: {fileID: 1444876763}
   m_Layer: 5
   m_Name: Rome
   m_TagString: Untagged
@@ -2134,6 +2187,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1444876763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444876757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1506064126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2277,7 @@ GameObject:
   - component: {fileID: 1554111631}
   - component: {fileID: 1554111630}
   - component: {fileID: 1554111633}
+  - component: {fileID: 1554111634}
   m_Layer: 5
   m_Name: Laguna Seca
   m_TagString: Untagged
@@ -2339,6 +2405,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1554111634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554111628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1602085696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2505,7 @@ GameObject:
   - component: {fileID: 1725527378}
   - component: {fileID: 1725527377}
   - component: {fileID: 1725527380}
+  - component: {fileID: 1725527381}
   m_Layer: 5
   m_Name: Special Stage Route
   m_TagString: Untagged
@@ -2554,6 +2633,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1725527381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725527375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1761663611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2942,6 +3033,7 @@ GameObject:
   - component: {fileID: 2003312533}
   - component: {fileID: 2003312532}
   - component: {fileID: 2003312535}
+  - component: {fileID: 2003312536}
   m_Layer: 5
   m_Name: Apricot Hill
   m_TagString: Untagged
@@ -3081,6 +3173,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2003312536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003312530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013334647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3198,7 @@ GameObject:
   - component: {fileID: 2013334650}
   - component: {fileID: 2013334649}
   - component: {fileID: 2013334652}
+  - component: {fileID: 2013334653}
   m_Layer: 5
   m_Name: Cote D Azur
   m_TagString: Untagged
@@ -3221,6 +3326,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2013334653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013334647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2037615847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,6 +3494,7 @@ GameObject:
   - component: {fileID: 2112036210}
   - component: {fileID: 2112036209}
   - component: {fileID: 2112036212}
+  - component: {fileID: 2112036213}
   m_Layer: 5
   m_Name: Deep Forest
   m_TagString: Untagged
@@ -3504,3 +3622,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2112036213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112036207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
