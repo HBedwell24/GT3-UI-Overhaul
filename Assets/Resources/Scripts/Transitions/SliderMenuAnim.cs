@@ -44,36 +44,15 @@ public class SliderMenuAnim : MonoBehaviour
                     if (isOpen)
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
-                        DisableAllButtons();
                     }
                     // fade from transparent to opaque
                     else
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Enter");
-                        EnableAllButtons();
-
                     }
                     StartCoroutine(FadeImage(isOpen));
                 }
             }
-        }
-    }
-
-    public void DisableAllButtons()
-    {
-        GameObject[] buttons = GameObject.FindGameObjectsWithTag("button");
-        foreach (GameObject g in buttons)
-        {
-            //g.GetComponent<Button>().interactable = false;
-        }
-    }
-
-    public void EnableAllButtons()
-    {
-        GameObject[] buttons = GameObject.FindGameObjectsWithTag("button");
-        foreach (GameObject g in buttons)
-        {
-            //g.GetComponent<Button>().interactable = true;
         }
     }
 

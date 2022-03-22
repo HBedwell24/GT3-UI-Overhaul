@@ -4662,5 +4662,11 @@ MonoBehaviour:
   charBtn:
   - {fileID: 555034098}
   - {fileID: 1419233722}
+  - {fileID: 1212665565}
+  - {fileID: 701574199}
+  - {fileID: 1330041389}
+  - {fileID: 1622427044}
+  - {fileID: 796609330}
+  - {fileID: 989035121}
   indicator: {fileID: 45970117}
   moveDelay: 0.2

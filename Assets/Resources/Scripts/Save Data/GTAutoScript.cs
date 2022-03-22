@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class GTAutoScript : MonoBehaviour
@@ -36,7 +37,11 @@ public class GTAutoScript : MonoBehaviour
     [SerializeField]
     public CanvasGroup wheelSelectionMenu;
 
+    [SerializeField]
+    public CanvasGroup staticCursor;
+
     private string currentScreen;
+    private string name;
 
     GameObject menuGroupGO;
     GameObject wheelGroup;
@@ -56,6 +61,7 @@ public class GTAutoScript : MonoBehaviour
         carWashTitle.alpha = 0;
         oilChangeTitle.alpha = 0;
         wheelShopTitle.alpha = 0;
+        staticCursor.alpha = 0;
 
         brandSelectionMenu.alpha = 0;
         brandSelectionMenu.interactable = false;
@@ -92,6 +98,7 @@ public class GTAutoScript : MonoBehaviour
 
         servicingTitle.alpha = 0;
         carWashTitle.alpha = 1;
+        staticCursor.alpha = 1;
 
         menuGroup.alpha = 0;
         menuGroup.interactable = false;
@@ -100,6 +107,8 @@ public class GTAutoScript : MonoBehaviour
         washCarButton.alpha = 1;
         washCarButton.interactable = true;
         washCarButton.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("Wash Car"));
     }
 
     public void OilChangeClicked()
@@ -112,6 +121,7 @@ public class GTAutoScript : MonoBehaviour
 
         servicingTitle.alpha = 0;
         oilChangeTitle.alpha = 1;
+        staticCursor.alpha = 1;
 
         menuGroup.alpha = 0;
         menuGroup.interactable = false;
@@ -120,6 +130,8 @@ public class GTAutoScript : MonoBehaviour
         changeOilButton.alpha = 1;
         changeOilButton.interactable = true;
         changeOilButton.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("Oil Change Button"));
     }
 
     public void WheelShopClicked()
@@ -141,10 +153,13 @@ public class GTAutoScript : MonoBehaviour
         brandSelectionMenu.alpha = 1;
         brandSelectionMenu.interactable = true;
         brandSelectionMenu.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("Enkei"));
     }
 
     public void BrandClicked()
     {
+        name = EventSystem.current.currentSelectedGameObject.name;
         brandGroup.GetComponent<CursorBehavior>().enabled = false;
         wheelGroup.GetComponent<CursorBehavior>().enabled = true;
 
@@ -159,6 +174,8 @@ public class GTAutoScript : MonoBehaviour
         wheelSelectionMenu.alpha = 1;
         wheelSelectionMenu.interactable = true;
         wheelSelectionMenu.blocksRaycasts = true;
+
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("CE28"));
     }
 
     public void PromptExit(InputAction.CallbackContext context)
@@ -174,6 +191,7 @@ public class GTAutoScript : MonoBehaviour
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     carWashTitle.alpha = 0;
+                    staticCursor.alpha = 0;
 
                     washCarButton.alpha = 0;
                     washCarButton.interactable = false;
@@ -182,6 +200,8 @@ public class GTAutoScript : MonoBehaviour
                     menuGroup.alpha = 1;
                     menuGroup.interactable = true;
                     menuGroup.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find("Car Wash"));
 
                     servicingTitle.alpha = 1;
                     currentScreen = "menuGroup";
@@ -193,6 +213,7 @@ public class GTAutoScript : MonoBehaviour
                     AudioManager.instance.PlaySoundEffect("Submenu Exit");
 
                     oilChangeTitle.alpha = 0;
+                    staticCursor.alpha = 0;
 
                     changeOilButton.alpha = 0;
                     changeOilButton.interactable = false;
@@ -201,6 +222,8 @@ public class GTAutoScript : MonoBehaviour
                     menuGroup.alpha = 1;
                     menuGroup.interactable = true;
                     menuGroup.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find("Oil Change"));
 
                     servicingTitle.alpha = 1;
                     currentScreen = "menuGroup";
@@ -222,6 +245,8 @@ public class GTAutoScript : MonoBehaviour
                     menuGroup.interactable = true;
                     menuGroup.blocksRaycasts = true;
 
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find("Wheel Shop"));
+
                     servicingTitle.alpha = 1;
                     currentScreen = "menuGroup";
                     break;
@@ -239,6 +264,8 @@ public class GTAutoScript : MonoBehaviour
                     brandSelectionMenu.alpha = 1;
                     brandSelectionMenu.interactable = true;
                     brandSelectionMenu.blocksRaycasts = true;
+
+                    EventSystem.current.SetSelectedGameObject(GameObject.Find(name));
                     currentScreen = "brandSelection";
                     break;
 
