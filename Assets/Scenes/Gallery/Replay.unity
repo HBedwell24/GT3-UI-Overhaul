@@ -3164,7 +3164,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1028330088}
         m_TargetAssemblyTypeName: GalleryScript, Assembly-CSharp
-        m_MethodName: MusicPlayed
+        m_MethodName: MusicClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

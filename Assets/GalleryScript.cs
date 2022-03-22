@@ -8,9 +8,13 @@ public class GalleryScript : MonoBehaviour
     [SerializeField]
     public CanvasGroup musicGroup;
 
+    private GameObject firstMusicButton;
 
     void Start()
     {
+        firstMusicButton = GameObject.Find("Are You");
+        firstMusicButton.SetActive(false);
+
         replayGroup.alpha = 0;
         replayGroup.interactable = false;
         replayGroup.blocksRaycasts = false;
@@ -22,6 +26,7 @@ public class GalleryScript : MonoBehaviour
 
     public void ReplayClicked()
     {
+        firstMusicButton.SetActive(false);
         musicGroup.alpha = 0;
         musicGroup.interactable = false;
         musicGroup.blocksRaycasts = false;
@@ -31,8 +36,9 @@ public class GalleryScript : MonoBehaviour
         replayGroup.blocksRaycasts = true;
     }
 
-    public void MusicPlayed()
+    public void MusicClicked()
     {
+        firstMusicButton.SetActive(true);
         replayGroup.alpha = 0;
         replayGroup.interactable = false;
         replayGroup.blocksRaycasts = false;
