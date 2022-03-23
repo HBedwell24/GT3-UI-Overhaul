@@ -78,7 +78,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Gallery/Library.unity
     guid: 5ac2692efd50b6b44bdeb12883fabce9
   - enabled: 1
-    path: Assets/Scenes/Gallery/Replay.unity
+    path: Assets/Scenes/Gallery/Gallery.unity
     guid: 9d5ba473b5247654b9dc6773b9d78298
   - enabled: 1
     path: Assets/Scenes/License Center/License Center.unity

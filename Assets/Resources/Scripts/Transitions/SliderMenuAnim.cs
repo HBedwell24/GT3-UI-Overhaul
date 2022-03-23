@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class SliderMenuAnim : MonoBehaviour
@@ -43,6 +44,7 @@ public class SliderMenuAnim : MonoBehaviour
                     // fade from opaque to transparent
                     if (isOpen)
                     {
+                        EventSystem.current.SetSelectedGameObject(GameObject.Find("Save Game"));
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
                     }
                     // fade from transparent to opaque
