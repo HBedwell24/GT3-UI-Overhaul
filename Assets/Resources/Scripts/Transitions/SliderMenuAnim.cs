@@ -16,6 +16,10 @@ public class SliderMenuAnim : MonoBehaviour
     [SerializeField]
     private CanvasGroup overlay;
 
+    public EventSystem eventSystem;
+    public GameObject lastSelectedGameObject;
+    private GameObject currentSelectedGameObject_Recent;
+
     public void Awake()
     {
         sideBar.alpha = 0;
@@ -27,6 +31,20 @@ public class SliderMenuAnim : MonoBehaviour
 
         overlay.alpha = 0;
         overlay.blocksRaycasts = false;
+    }
+
+    void Update()
+    {
+        GetLastGameObjectSelected();
+    }
+
+    private void GetLastGameObjectSelected()
+    {
+        if (eventSystem.currentSelectedGameObject != currentSelectedGameObject_Recent)
+        {
+            lastSelectedGameObject = currentSelectedGameObject_Recent;
+            currentSelectedGameObject_Recent = eventSystem.currentSelectedGameObject;
+        }
     }
 
     public void ShowHideMenu(InputAction.CallbackContext context)
@@ -44,13 +62,18 @@ public class SliderMenuAnim : MonoBehaviour
                     // fade from opaque to transparent
                     if (isOpen)
                     {
-                        EventSystem.current.SetSelectedGameObject(GameObject.Find("Save Game"));
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                        if (!lastSelectedGameObject.name.Equals("Load Game") && !lastSelectedGameObject.name.Equals("Options"))
+                        {
+                            eventSystem.SetSelectedGameObject(lastSelectedGameObject);
+                        }
+                            
                     }
                     // fade from transparent to opaque
                     else
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Enter");
+                        eventSystem.SetSelectedGameObject(GameObject.Find("Save Game"));
                     }
                     StartCoroutine(FadeImage(isOpen));
                 }
