@@ -42,7 +42,11 @@ public class SliderMenuAnim : MonoBehaviour
     {
         if (eventSystem.currentSelectedGameObject != currentSelectedGameObject_Recent)
         {
-            lastSelectedGameObject = currentSelectedGameObject_Recent;
+            if (!eventSystem.currentSelectedGameObject.name.Contains("Load Game") && !eventSystem.currentSelectedGameObject.name.Contains("Options"))
+            {
+                lastSelectedGameObject = currentSelectedGameObject_Recent;
+            }
+            
             currentSelectedGameObject_Recent = eventSystem.currentSelectedGameObject;
         }
     }
@@ -63,10 +67,8 @@ public class SliderMenuAnim : MonoBehaviour
                     if (isOpen)
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
-                        if (!lastSelectedGameObject.name.Equals("Load Game") && !lastSelectedGameObject.name.Equals("Options"))
-                        {
+                        
                             eventSystem.SetSelectedGameObject(lastSelectedGameObject);
-                        }
                             
                     }
                     // fade from transparent to opaque

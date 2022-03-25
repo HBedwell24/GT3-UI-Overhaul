@@ -3463,6 +3463,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sidebar Pullout 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4216240185103434190, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1255741403}
+    - target: {fileID: 4216240185103434190, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: lastSelectedGameObject
+      value: 
+      objectReference: {fileID: 1139754486}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
 --- !u!224 &1258250413 stripped
