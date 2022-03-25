@@ -16,8 +16,7 @@ public class SliderMenuAnim : MonoBehaviour
     [SerializeField]
     private CanvasGroup overlay;
 
-    public EventSystem eventSystem;
-    public GameObject lastSelectedGameObject;
+    private GameObject lastSelectedGameObject;
     private GameObject currentSelectedGameObject_Recent;
 
     public void Awake()
@@ -40,14 +39,14 @@ public class SliderMenuAnim : MonoBehaviour
 
     private void GetLastGameObjectSelected()
     {
-        if (eventSystem.currentSelectedGameObject != currentSelectedGameObject_Recent)
+        if (EventSystem.current.currentSelectedGameObject != currentSelectedGameObject_Recent)
         {
-            if (!eventSystem.currentSelectedGameObject.name.Contains("Load Game") && !eventSystem.currentSelectedGameObject.name.Contains("Options"))
+            if (!EventSystem.current.currentSelectedGameObject.name.Contains("Load Game") && !EventSystem.current.currentSelectedGameObject.name.Contains("Options"))
             {
                 lastSelectedGameObject = currentSelectedGameObject_Recent;
             }
             
-            currentSelectedGameObject_Recent = eventSystem.currentSelectedGameObject;
+            currentSelectedGameObject_Recent = EventSystem.current.currentSelectedGameObject;
         }
     }
 
@@ -67,15 +66,14 @@ public class SliderMenuAnim : MonoBehaviour
                     if (isOpen)
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
-                        
-                            eventSystem.SetSelectedGameObject(lastSelectedGameObject);
+                        EventSystem.current.SetSelectedGameObject(lastSelectedGameObject);
                             
                     }
                     // fade from transparent to opaque
                     else
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Enter");
-                        eventSystem.SetSelectedGameObject(GameObject.Find("Save Game"));
+                        EventSystem.current.SetSelectedGameObject(GameObject.Find("Save Game"));
                     }
                     StartCoroutine(FadeImage(isOpen));
                 }
