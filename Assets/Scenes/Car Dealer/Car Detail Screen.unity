@@ -1393,6 +1393,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sidebar Pullout 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4216240185716463791, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1134006025}
+    - target: {fileID: 4216240185716463791, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneWithTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216240186377740178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1134006025}
+    - target: {fileID: 4216240186377740178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneWithTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216240186487759571, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1134006025}
+    - target: {fileID: 4216240186487759571, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneWithTransition
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
 --- !u!224 &1082219718 stripped

@@ -16,8 +16,6 @@ public class LoadingManager : MonoBehaviour
     public Image FadeImage;
     public float FadeTime;
 
-    public PlayerInput playerInput;
-
     private bool isLoading;
 
     private string lastScene;
