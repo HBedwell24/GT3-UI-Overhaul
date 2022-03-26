@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SliderMenuAnim : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class SliderMenuAnim : MonoBehaviour
 
     private GameObject lastSelectedGameObject;
     private GameObject currentSelectedGameObject_Recent;
+
+    [SerializeField]
+    private Material material;
 
     public void Awake()
     {
@@ -66,6 +70,9 @@ public class SliderMenuAnim : MonoBehaviour
                     if (isOpen)
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                        sideBar.GetComponent<Image>().color = new Color(255, 255, 255, 0f);
+                        sideBar.GetComponent<Image>().material = null;
+                        
                         EventSystem.current.SetSelectedGameObject(lastSelectedGameObject);
                             
                     }
@@ -73,6 +80,8 @@ public class SliderMenuAnim : MonoBehaviour
                     else
                     {
                         AudioManager.instance.PlaySoundEffect("Submenu Enter");
+                        sideBar.GetComponent<Image>().color = new Color(255, 255, 255, 1f); ;
+                        sideBar.GetComponent<Image>().material = material;
                         EventSystem.current.SetSelectedGameObject(GameObject.Find("Save Game"));
                     }
                     StartCoroutine(FadeImage(isOpen));
