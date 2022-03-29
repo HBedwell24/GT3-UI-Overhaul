@@ -1334,35 +1334,11 @@ MonoBehaviour:
     m_ActionId: a16989f8-8b1a-45c5-9d65-392e406653ce
     m_ActionName: Menu/Go Up[/DualShock4GamepadHID/dpad/up,/DualShock4GamepadHID/leftStick/up]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
-        m_MethodName: L1Pressed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: c9572160-c372-476f-9d6a-09aff715076a
     m_ActionName: Menu/Pan Left[/DualShock4GamepadHID/leftShoulder]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WidgetClickEvents, Assembly-CSharp
-        m_MethodName: R1Pressed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 970b2fef-acf8-416b-b1ac-ef1ecc270c2e
     m_ActionName: Menu/Pan Right[/DualShock4GamepadHID/rightShoulder]
   - m_PersistentCalls:
@@ -2285,7 +2261,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b38a0c13192deb4a8cd5413e5e1d730, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 635d76986240b4c41ae8a0e7ca48f5f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
