@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Launch Screen.unity
+    guid: fb3cee1528943404c9827a97e25f08ce
+  - enabled: 1
     path: Assets/Scenes/Simulation Mode.unity
     guid: 400e5aec2406a5d4dbd77b41bb26d202
   - enabled: 1
@@ -51,9 +54,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Options/Load Screen.unity
     guid: 5cf416f97a444ea48ab4fa2f64a45881
   - enabled: 1
-    path: Assets/Scenes/Options/Options.unity
-    guid: ebc5602a0d02d8e48aec0497d6e9f8ab
-  - enabled: 1
     path: Assets/Scenes/Options/Audio.unity
     guid: caa0261fcc260e645a76fe6bde1687a1
   - enabled: 1
@@ -75,9 +75,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Go Race/Race Confirmation Screen.unity
     guid: 23b4be57fdada4c43aebd971ad53ee10
   - enabled: 1
-    path: Assets/Scenes/Gallery/Library.unity
-    guid: 5ac2692efd50b6b44bdeb12883fabce9
-  - enabled: 1
     path: Assets/Scenes/Gallery/Gallery.unity
     guid: 9d5ba473b5247654b9dc6773b9d78298
   - enabled: 1
@@ -86,7 +83,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/License Center/License Detail Screen.unity
     guid: 3e5e3727a04f68442a78477094e5d42e
-  - enabled: 1
-    path: Assets/Scenes/Launch Screen.unity
-    guid: fb3cee1528943404c9827a97e25f08ce
   m_configObjects: {}

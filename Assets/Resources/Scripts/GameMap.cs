@@ -39,7 +39,7 @@ public class GameMap : MonoBehaviour
         {
             moveTimer += Time.deltaTime;
         }
-        if (Input.GetJoystickNames().Length > 0)
+        if (Gamepad.current != null)
         {
             if (Gamepad.current.dpad.IsPressed() || Gamepad.current.leftStick.IsPressed())
             {
