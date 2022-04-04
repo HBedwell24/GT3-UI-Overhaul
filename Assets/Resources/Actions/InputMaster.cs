@@ -112,144 +112,144 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""c86f2e53-538b-4999-8fbf-ad8a56c1d214"",
-                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""id"": ""74628543-2f96-4f2b-9166-a780851239ac"",
+                    ""path"": ""<XInputController>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Proceed"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0c6d57af-e18f-41d5-95d7-ea91e76fac5b"",
-                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""id"": ""ff258f86-ddf3-4fd5-b9f3-445ef01242b9"",
+                    ""path"": ""<XInputController>/dpad/right"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
-                    ""action"": ""Go Back"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""69d5f9e8-29ce-4a10-a9f4-423dc5d35ca0"",
-                    ""path"": ""<DualShockGamepad>/dpad/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""22264f36-eefd-43eb-a55d-317690ba1e25"",
-                    ""path"": ""<DualShockGamepad>/leftStick/right"",
+                    ""id"": ""f9f1f04a-46ea-4931-b30e-a78308fe69be"",
+                    ""path"": ""<XInputController>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4661ce4d-49cf-42f3-b458-4121aaf5b4ea"",
-                    ""path"": ""<DualShockGamepad>/dpad/left"",
+                    ""id"": ""2e58547d-bcb0-4932-bc1c-c8e97a832092"",
+                    ""path"": ""<XInputController>/dpad/left"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""aeb4a47f-f28b-49e7-a045-44b606621231"",
-                    ""path"": ""<DualShockGamepad>/leftStick/left"",
+                    ""id"": ""a44c5835-051d-45d6-a8cc-c889d9058185"",
+                    ""path"": ""<XInputController>/leftStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""77294a9d-71db-4328-911b-0f0725ae59bc"",
-                    ""path"": ""<DualShockGamepad>/dpad/down"",
+                    ""id"": ""d27155e3-ab87-4993-aacf-25b703108a8a"",
+                    ""path"": ""<XInputController>/dpad/down"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0cab4382-3cb2-4cb7-b338-9375206f5082"",
-                    ""path"": ""<DualShockGamepad>/leftStick/down"",
+                    ""id"": ""dceaee39-86d1-4489-bd95-d49d0e4d4a9a"",
+                    ""path"": ""<XInputController>/leftStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c39deaa6-ea3e-49ce-9f9a-6f6a7ffa41d3"",
-                    ""path"": ""<DualShockGamepad>/dpad/up"",
+                    ""id"": ""378e887b-e51c-4a82-bfc2-fc8c69c02e68"",
+                    ""path"": ""<XInputController>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4f79bf0b-7cee-43c5-a366-5e918f11c5e3"",
-                    ""path"": ""<DualShockGamepad>/leftStick/up"",
-                    ""interactions"": ""Press"",
+                    ""id"": ""5642da04-fab6-4db1-90d2-7e576a8bf502"",
+                    ""path"": ""<XInputController>/leftStick/up"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Go Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1fa9aa0e-0428-4319-9b2e-032421f533e7"",
-                    ""path"": ""<DualShockGamepad>/leftShoulder"",
+                    ""id"": ""b3397c8e-5aa0-4493-b7e6-2eda2ca713c3"",
+                    ""path"": ""<XInputController>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Pan Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a2acbafd-6c1e-4250-b8a8-7d0b281d306b"",
-                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""id"": ""2cde37a9-ab5d-484e-8401-dad844faf675"",
+                    ""path"": ""<XInputController>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Pan Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7fbc3054-2a60-46ce-bc9c-d192a5606d29"",
-                    ""path"": ""<DualShockGamepad>/start"",
-                    ""interactions"": ""Press"",
+                    ""id"": ""f543a682-4f48-4e7e-80ef-cbf75a18515e"",
+                    ""path"": ""<XInputController>/start"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Playstation Control Scheme"",
+                    ""groups"": ""Xbox Control Scheme"",
                     ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2a6a45a-1655-4e03-b895-75eb830348e5"",
+                    ""path"": ""<XInputController>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Xbox Control Scheme"",
+                    ""action"": ""Go Back"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -258,11 +258,11 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""Playstation Control Scheme"",
-            ""bindingGroup"": ""Playstation Control Scheme"",
+            ""name"": ""Xbox Control Scheme"",
+            ""bindingGroup"": ""Xbox Control Scheme"",
             ""devices"": [
                 {
-                    ""devicePath"": ""<DualShockGamepad>"",
+                    ""devicePath"": ""<XInputController>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -433,13 +433,13 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         }
     }
     public MenuActions @Menu => new MenuActions(this);
-    private int m_PlaystationControlSchemeSchemeIndex = -1;
-    public InputControlScheme PlaystationControlSchemeScheme
+    private int m_XboxControlSchemeSchemeIndex = -1;
+    public InputControlScheme XboxControlSchemeScheme
     {
         get
         {
-            if (m_PlaystationControlSchemeSchemeIndex == -1) m_PlaystationControlSchemeSchemeIndex = asset.FindControlSchemeIndex("Playstation Control Scheme");
-            return asset.controlSchemes[m_PlaystationControlSchemeSchemeIndex];
+            if (m_XboxControlSchemeSchemeIndex == -1) m_XboxControlSchemeSchemeIndex = asset.FindControlSchemeIndex("Xbox Control Scheme");
+            return asset.controlSchemes[m_XboxControlSchemeSchemeIndex];
         }
     }
     public interface IMenuActions
