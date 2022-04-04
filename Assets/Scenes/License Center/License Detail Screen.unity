@@ -830,22 +830,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &994232228 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
-  m_PrefabInstance: {fileID: 1879967414}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &994232229 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4216240185103434190, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
-  m_PrefabInstance: {fileID: 1879967414}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd85379cb8701454696653c3dffe37f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1042337089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,7 +1229,7 @@ RectTransform:
   - {fileID: 125023510}
   - {fileID: 2033308139}
   - {fileID: 630703818}
-  - {fileID: 994232228}
+  - {fileID: 1975490162}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1325,7 +1309,7 @@ MonoBehaviour:
     m_ActionName: Menu/Pan Right[/DualShock4GamepadHID/rightShoulder]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 994232229}
+      - m_Target: {fileID: 1975490163}
         m_TargetAssemblyTypeName: SliderMenuAnim, Assembly-CSharp
         m_MethodName: ShowHideMenu
         m_Mode: 0
@@ -1340,7 +1324,7 @@ MonoBehaviour:
     m_ActionId: 1b2a4d07-33fa-4ccd-ba82-b247ae01eaab
     m_ActionName: Menu/Start[/DualShock4GamepadHID/start]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Playstation Control Scheme
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Menu
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -1476,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a410308bf54cf7f4492f5d0e67124d5f, type: 3}
---- !u!1001 &1879967414
+--- !u!1001 &1975490161
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1553,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1597,6 +1581,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+--- !u!224 &1975490162 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4216240185103434178, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+  m_PrefabInstance: {fileID: 1975490161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975490163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4216240185103434190, guid: 80e22c0a840997d47bf082becd73b50d, type: 3}
+  m_PrefabInstance: {fileID: 1975490161}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd85379cb8701454696653c3dffe37f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1992541437
 GameObject:
   m_ObjectHideFlags: 0
