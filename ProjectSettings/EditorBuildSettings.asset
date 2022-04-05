@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Arcade Mode/Single Player.unity
     guid: b3149ba3223bd8e46a8b4431a1539d22
   - enabled: 1
+    path: Assets/Scenes/Arcade Mode/Time Trials.unity
+    guid: de45a2deb3c39a7489c258edcba4fda6
+  - enabled: 1
     path: Assets/Scenes/Arcade Mode/Track Selection.unity
     guid: 940166b330b61cd40bd49f7db963dc8a
   - enabled: 1
