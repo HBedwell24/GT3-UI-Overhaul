@@ -481,7 +481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 168781331}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &168781331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +721,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 336854560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &336854560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,7 +1172,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 840806637}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &840806637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,7 +1505,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1050588545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1050588545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,7 +2048,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1444876760}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1444876760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2218,7 +2278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1554111631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1554111631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2446,7 +2518,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1725527378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725527378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,7 +3360,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2013334650}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2013334650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3588,7 +3684,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2112036210}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1259955709}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Car Selection,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2112036210
 MonoBehaviour:
   m_ObjectHideFlags: 0

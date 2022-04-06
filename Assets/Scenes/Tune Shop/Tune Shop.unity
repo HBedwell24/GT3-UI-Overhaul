@@ -417,7 +417,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 441634629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269261926}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Upgrade Category,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &441634629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,7 +582,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 471022053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269261926}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Upgrade Category,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &471022053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,7 +879,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 726310860}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269261926}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Upgrade Category,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &726310860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,7 +1722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1197460665}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269261926}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Upgrade Category,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1197460665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,7 +2281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1773450276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269261926}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Upgrade Category,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1773450276
 MonoBehaviour:
   m_ObjectHideFlags: 0

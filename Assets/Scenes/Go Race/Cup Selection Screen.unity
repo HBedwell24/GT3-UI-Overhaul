@@ -338,7 +338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 51423828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &51423828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,7 +503,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 101792042}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &101792042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +779,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 279153682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &279153682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 772321318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &772321318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,7 +1968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1033741233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1033741233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2303,7 +2363,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1211783665}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1211783665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2759,7 +2831,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1361089643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1361089643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3344,7 +3428,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2041044642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1672381254}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cup Detail Screen,true
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2041044642
 MonoBehaviour:
   m_ObjectHideFlags: 0
