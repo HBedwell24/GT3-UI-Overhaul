@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 51068885}
   - component: {fileID: 51068887}
   - component: {fileID: 51068888}
+  - component: {fileID: 51068889}
   m_Layer: 5
   m_Name: Change Car
   m_TagString: Untagged
@@ -338,6 +339,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &51068889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51068883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &95547647
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +746,7 @@ GameObject:
   - component: {fileID: 789005521}
   - component: {fileID: 789005520}
   - component: {fileID: 789005519}
+  - component: {fileID: 789005523}
   m_Layer: 5
   m_Name: Enter
   m_TagString: Untagged
@@ -860,6 +874,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789005517}
   m_CullTransparentMesh: 1
+--- !u!114 &789005523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789005517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b4f6413790ad94980ce8b313789f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &810093281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 148286438b13eec448067278a3940934, type: 3}
   m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 810093282}
+  m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2482,7 +2508,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 285 PP/285 BHP/1200 kg
+  m_Text: 356 PP/155 BHP/1220 kg
 --- !u!222 &1824610209
 CanvasRenderer:
   m_ObjectHideFlags: 0

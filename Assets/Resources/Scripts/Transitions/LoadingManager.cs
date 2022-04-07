@@ -72,9 +72,13 @@ public class LoadingManager : MonoBehaviour
         {
             AudioManager.instance.PlayMusic("GT Auto");
         }
-        else if (lastScene.Equals("Audio") || lastScene.Equals("Save Screen") || lastScene.Equals("Load Screen") || lastScene.Equals("Gallery"))
+        else if (lastScene.Equals("Audio") || lastScene.Equals("Save Screen") || lastScene.Equals("Load Screen") || lastScene.Equals("Gallery") || lastScene.Equals("Car Purchase Screen"))
         {
             AudioManager.instance.StopMusic();
+            if (lastScene.Equals("Car Purchase Screen"))
+            {
+                AudioManager.instance.PlaySoundEffect("Car Purchase Sound");
+            }
         }
     }
 
