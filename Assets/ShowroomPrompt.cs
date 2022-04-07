@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class ShowroomPrompt : MonoBehaviour
 {
     public GameObject loadingManager;
+    public GameObject video;
 
     [SerializeField]
     public CanvasGroup overlay;
@@ -20,10 +21,15 @@ public class ShowroomPrompt : MonoBehaviour
     GameObject showroomGO;
 
     private int counter = 1;
+    private Vector3 scaleChange, positionChange;
 
     // Start is called before the first frame update
     void Start()
     {
+        scaleChange = new Vector3(0.008f, 0.008f, 0.008f);
+        positionChange = new Vector3(-3f, 0f, 0.0f);
+
+
         purchasePopUpGO = GameObject.Find("Purchase Pop-up");
         showroomGO = GameObject.Find("Showroom");
 
@@ -43,6 +49,7 @@ public class ShowroomPrompt : MonoBehaviour
     {
         counter = counter + 2;
         AudioManager.instance.PlaySoundEffect("Submenu Enter");
+        
         StartCoroutine(FadeUI(true));
     }
 
@@ -56,6 +63,9 @@ public class ShowroomPrompt : MonoBehaviour
                 gameUI.alpha = i;
                 gameUI.interactable = false;
                 gameUI.blocksRaycasts = false;
+
+                video.transform.localScale += scaleChange;
+                video.transform.position += positionChange;
                 yield return null;
             }
         }
@@ -67,6 +77,9 @@ public class ShowroomPrompt : MonoBehaviour
                 gameUI.alpha = i;
                 gameUI.interactable = true;
                 gameUI.blocksRaycasts = true;
+
+                video.transform.localScale -= scaleChange;
+                video.transform.position -= positionChange;
                 yield return null;
             }
         }
