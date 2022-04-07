@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Car Dealer/Car Detail Screen.unity
     guid: 5e1a5c11a66919a48a08b74c06877385
   - enabled: 1
+    path: Assets/Scenes/Car Dealer/Car Purchase Screen.unity
+    guid: ba946e950a7c050438bb1348e0107671
+  - enabled: 1
     path: Assets/Scenes/My Home/Car List Screen.unity
     guid: 23a95aa05373fc24d93a3be235d3eec9
   - enabled: 1
