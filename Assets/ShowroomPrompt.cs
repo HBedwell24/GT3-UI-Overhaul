@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -12,6 +13,9 @@ public class ShowroomPrompt : MonoBehaviour
     [SerializeField]
     public CanvasGroup purchasePopUp;
 
+    [SerializeField]
+    public CanvasGroup gameUI;
+
     GameObject purchasePopUpGO;
     GameObject showroomGO;
 
@@ -23,12 +27,49 @@ public class ShowroomPrompt : MonoBehaviour
         purchasePopUpGO = GameObject.Find("Purchase Pop-up");
         showroomGO = GameObject.Find("Showroom");
 
+        gameUI.alpha = 1;
+        gameUI.interactable = true;
+        gameUI.blocksRaycasts = true;
+
         overlay.alpha = 0;
         overlay.blocksRaycasts = false;
 
         purchasePopUp.alpha = 0;
         purchasePopUp.interactable = false;
         purchasePopUp.blocksRaycasts = false;
+    }
+
+    public void GalleryClicked()
+    {
+        counter = counter + 2;
+        AudioManager.instance.PlaySoundEffect("Submenu Enter");
+        StartCoroutine(FadeUI(true));
+    }
+
+    IEnumerator FadeUI(bool toTransparent)
+    {
+        if (toTransparent)
+        {
+            for (float i = 1; i >= 0; i -= Time.deltaTime * 2)
+            {
+                // set color with i as alpha
+                gameUI.alpha = i;
+                gameUI.interactable = false;
+                gameUI.blocksRaycasts = false;
+                yield return null;
+            }
+        }
+        else
+        {
+            for (float i = 0; i <= 1; i += Time.deltaTime * 2)
+            {
+                // set color with i as alpha
+                gameUI.alpha = i;
+                gameUI.interactable = true;
+                gameUI.blocksRaycasts = true;
+                yield return null;
+            }
+        }
     }
 
     public void PurchaseCar()
@@ -84,6 +125,12 @@ public class ShowroomPrompt : MonoBehaviour
                     purchasePopUp.blocksRaycasts = false;
 
                     EventSystem.current.SetSelectedGameObject(GameObject.Find("Enter"));
+                    break;
+
+                case 3:
+                    counter = counter - 2;
+                    AudioManager.instance.PlaySoundEffect("Submenu Exit");
+                    StartCoroutine(FadeUI(false));
                     break;
 
                 default:
