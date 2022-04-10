@@ -23,6 +23,8 @@ public class SliderMenuAnim : MonoBehaviour
     [SerializeField]
     private Material material;
 
+    bool isOpen;
+
     public void Awake()
     {
         sideBar.alpha = 0;
@@ -38,6 +40,10 @@ public class SliderMenuAnim : MonoBehaviour
 
     void Update()
     {
+        if (lastSelectedGameObject == null)
+        {
+            lastSelectedGameObject = EventSystem.current.firstSelectedGameObject;
+        }
         GetLastGameObjectSelected();
     }
 
@@ -45,7 +51,7 @@ public class SliderMenuAnim : MonoBehaviour
     {
         if (EventSystem.current.currentSelectedGameObject != currentSelectedGameObject_Recent)
         {
-            if (!EventSystem.current.currentSelectedGameObject.name.Contains("Load Game") && !EventSystem.current.currentSelectedGameObject.name.Contains("Options"))
+            if (!EventSystem.current.currentSelectedGameObject.name.Contains("Save Game") && !EventSystem.current.currentSelectedGameObject.name.Contains("Load Game") && !EventSystem.current.currentSelectedGameObject.name.Contains("Options") && !isOpen)
             {
                 lastSelectedGameObject = currentSelectedGameObject_Recent;
             }
@@ -63,7 +69,7 @@ public class SliderMenuAnim : MonoBehaviour
                 Animator animator = PanelMenu.GetComponent<Animator>();
                 if (animator != null)
                 {
-                    bool isOpen = animator.GetBool("show");
+                    isOpen = animator.GetBool("show");
                     animator.SetBool("show", !isOpen);
 
                     // fade from opaque to transparent
