@@ -81,6 +81,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Go Race/Race Confirmation Screen.unity
     guid: 23b4be57fdada4c43aebd971ad53ee10
   - enabled: 1
+    path: Assets/Scenes/Machine Test.unity
+    guid: 6adea850878fdf643b8bc53e5b90d865
+  - enabled: 1
     path: Assets/Scenes/Gallery/Gallery.unity
     guid: 9d5ba473b5247654b9dc6773b9d78298
   - enabled: 1
