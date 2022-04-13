@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 37039457}
   - component: {fileID: 37039456}
   m_Layer: 5
-  m_Name: Black BG1 (1)
+  m_Name: Black BG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 1770629943}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1845.4, y: 0.0010375977}
-  m_SizeDelta: {x: 168.24, y: 133.64}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -74.599976, y: 0.0010375977}
+  m_SizeDelta: {x: 168.23999, y: 133.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37039456
 MonoBehaviour:
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 65990664}
   - component: {fileID: 65990663}
   m_Layer: 5
-  m_Name: Grain (1)
+  m_Name: Grain Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
