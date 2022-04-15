@@ -27,7 +27,7 @@ public class ShowroomPrompt : MonoBehaviour
     void Start()
     {
         scaleChange = new Vector3(0.008f, 0.008f, 0.008f);
-        positionChange = new Vector3(-3f, 0f, 0.0f);
+        positionChange = new Vector3(-2f, 0f, 0.0f);
 
 
         purchasePopUpGO = GameObject.Find("Purchase Pop-up");
